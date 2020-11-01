@@ -1,0 +1,1428 @@
+<style>
+    body {
+
+        /*  background-color: #f9ea8f;
+    background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+    background-color: #f6d327;
+    background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%); */
+
+        /* background-color: #fdb813;
+background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
+        background-color: #edd812;
+        background-image: linear-gradient(315deg, #edd812 0%, #766a65 74%);
+        background-color: #d2a813;
+background-image: linear-gradient(315deg, #d2a813 0%, #000000 74%);
+background-color: #fce055;
+background-image: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
+background-color: #baba00;
+background-image: linear-gradient(315deg, #baba00 0%, #ba1313 74%);
+background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+background: green; */
+
+
+    }
+
+    body * {
+        box-sizing: border-box;
+        position: absolute;
+    }
+
+    div:after,
+    div:before {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    .frame {
+      /*  background-color: #003b64;
+        background-image: radial-gradient(#bbb022 0%, #001942 70%, #000 100%); */
+        background-color: #eec0c6;
+        background-image: radial-gradient(circle at 90%, #bbb022 0%, #bb9092 25%, #001942 100%);
+
+        width: 1500px;
+        height: 900px;
+        overflow: hidden;
+    }
+
+    .building-panel-1 {
+      left: 214px;
+      transform: perspective(.7em) rotateX(0deg) rotateY(.95deg) skew(0.0turn, 2deg);
+      background: linear-gradient(117deg, #234511, #507022);
+      width: 13em;
+      height: 19.1em;
+      top: 138px;
+      box-shadow: -3px -35px 86px -10px #080410;
+    }
+    .building-panel-2 {
+      background-color: #0a2500;
+      width: 12.3em;
+      height: 22.6em;
+      top: 106px;
+      box-shadow: 32px -10px 40px 0px #080410;
+    }
+    .building-panel-3 {
+      left: 383px;
+      transform: perspective(1.1em) rotateX(0deg) rotateY(1.6deg) skew(0turn, 5deg);
+      background: linear-gradient(117deg, #9686a6, #a09090);
+      width: 6.5em;
+      height: 21em;
+      top: 78px;
+    }
+
+    .building-panel-4 {
+      left: 24px;
+      background-color: #604050;
+      width: 22.2em;
+      height: 6.3em;
+      top: 58px;
+    }
+    .building-panel-5 {
+      left: 525px;
+      transform: perspective(1.1em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 3deg);
+      background: linear-gradient(117deg, #280515, #701838);
+      width: 8.2em;
+      height: 16.7em;
+      top: 125px;
+      box-shadow: -14px -30px 62px -14px #080410;
+    }
+    .building-panel-9 {
+      left: 356px;
+      background-color: #280515;
+      width: 10em;
+      height: 19em;
+      top: 102px;
+    }
+    .building-panel-8 {
+      left: 222px;
+      background-color: #401818;
+      width: 26.7em;
+      height: 20.5em;
+      top: 21px;
+    }
+    .building-panel-6 {
+      left: 660px;
+      transform: perspective(.9em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 7deg);
+      background: linear-gradient(117deg, #602020, #901020);
+      width: 8.1em;
+      height: 19.5em;
+      top: 58px;
+    }
+
+    .building-panel-7 {
+      left: 796px;
+      transform: perspective(.7em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 6deg);
+      background: linear-gradient(150deg, #775777, #efaf9f);
+      width: 8em;
+      height: 13.8em;
+      top: 120px;
+    }
+
+    .building-panel-10 {
+      left: 880px;
+      background-color: #a89080;
+      width: 7.3em;
+      height: 10.7em;
+      top: 143px;
+      border: 3px solid #2a2031;
+    }
+    .building-panel-11 {
+      left: 998px;
+      transform: perspective(.5em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 5deg);
+      background: linear-gradient(150deg, #080410, #2a2031);
+      width: 2em;
+      height: 10em;
+      top: 150px;
+    }
+
+    .building-panel-12 {
+      left: 1047px;
+      transform: perspective(.39em) rotateX(0deg) rotateY(2.1deg) skew(0turn, 2.9deg);
+      background: linear-gradient(150deg, #332333, #993344);
+      width: 6em;
+      height: 5.8em;
+      top: 199px;
+    }
+
+    .building-panel-13 {
+      left: 610px;
+      background: linear-gradient(77deg, #705f90 60%, transparent 75%),
+                  linear-gradient(0deg, #400f27 60%, transparent 85%);
+      width: 525px;
+      height: 280px;
+      top: 23px;
+      transform: perspective(2em) rotateX(-.2deg);
+    }
+
+    .building-panel-13-top {
+      left: 644px;
+      background-color: #000099;
+      width: 32.3em;
+      height: 16.7em;
+      top: 21px;
+    }
+
+    .building-panel-14 {
+      left: 1138px;
+      background: linear-gradient(150deg, #400f27, #a03fb0);
+      width: 60px;
+      height: 154px;
+      top: 134px;
+      transform: perspective(.1em) rotateX(0deg) rotateY(.4deg) skew(-0.004turn, 2.9deg);
+    }
+
+    .building-panel-15 {
+      left: 1137px;
+      background: #400f27;
+      width: 40px;
+      height: 61px;
+      top: 69px;
+      transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 21.9deg);
+    }
+    .building-panel-16 {
+      left: 1004px;
+      width: 30px;
+      height: 41px;
+      top: 32px;
+      transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 21.9deg);
+    }
+
+
+    .concrete-row {
+      height: 7%;
+      width: 100%;
+      background-color: #8f7f7f;
+      position: relative;
+      opacity: 0.8;
+    }
+
+    .solid-row {
+      background: #8a7577;
+      opacity: 1;
+      box-shadow: -112px 3px 12px -2px #080410;
+    }
+
+    .window-row {
+      height: 7%;
+      width: 100%;
+      background: #cbbacf;
+      position: relative;
+      opacity: 0.8;
+    }
+    .window-row > div, .concrete-row > div {
+      height: 100%;
+      width: 5%;
+      border: 1px solid rgba(10, 5 ,15 ,.3);
+      position: relative;
+      float: left;
+    }
+
+    .window-row.short, .concrete-row.short {
+      height: 11.1%;
+      opacity: 0.7;
+    }
+
+    .window-row.shorter, .concrete-row.shorter {
+      height: 33.3%;
+      opacity: 0.7;
+    }
+
+    .window-row.shortest, .concrete-row.shortest {
+      height: 50%;
+      opacity: 0.7;
+    }
+
+    .window-row.shortest > div, .concrete-row.shortest > div {
+      height: 100%;
+      width: 50%;
+      border: 1px solid rgba(10, 5 ,15 ,.3);
+      position: relative;
+      float: left;
+    }
+
+    .window-row.shorter > div, .concrete-row.shorter > div {
+      height: 100%;
+      width: 33.3%;
+      border: 1px solid rgba(10, 5 ,15 ,.3);
+      position: relative;
+      float: left;
+    }
+
+    .window-row.short > div, .concrete-row.short > div {
+      height: 100%;
+      width: 20%;
+      border: 1px solid rgba(10, 5 ,15 ,.3);
+      position: relative;
+      float: left;
+    }
+    .short-row {
+      width: 74%;
+      left: 5px;
+      top: 5px;
+    }
+    .short-row > div {
+      width: 6.666%;
+    }
+
+    .dark-window-row {
+      height: 20%;
+      width: 92%;
+      background: #221122;
+      position: relative;
+      left: 2px;
+      top: 10px;
+      margin-bottom: 6px;
+    }
+
+    .dark-window-row > div {
+      height: 100%;
+      width: 16.6%;
+      border: 1px solid rgba(111, 80 ,99 ,.4);
+      position: relative;
+      float: left;
+    }
+
+    .recess {
+      left: 3.5%;
+      top: 3.5%;
+      width: 93%;
+      height: 93%;
+      box-shadow: inset -2px 8px 4px 1px rgba(0, 0, 0, .4);
+    }
+
+    .green-window-1 {
+      top: 30px;
+      left: 10%;
+    }
+
+    .green-window-2 {
+      top: 30px;
+      left: 60%;
+    }
+
+    .red-window-1 {
+      left: 8%;
+    }
+
+    .red-window-2 {
+      left: 38%;
+    }
+
+    .red-window-3 {
+      left: 68%;
+    }
+
+    .white-window-1 {
+
+      left: 5%;
+    }
+
+    .white-window-2 {
+
+      left: 28%;
+    }
+
+    .white-window-3 {
+
+      left: 51%;
+    }
+
+    .white-window-4 {
+
+      left: 74%;
+    }
+
+    .green-window-container {
+      border-color: rgba(0, 0, 0, 0.7);
+      height: 34%;
+      width: 26%;
+      border-bottom: 10px solid #001400;
+      box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, .3);
+    }
+
+    .red-window-container {
+      height: 100%;
+      width: 20%;
+      box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, .3);
+      border-color: rgba(255, 255, 255, 0.5);
+      border-bottom: 5px solid #440f27;
+    }
+
+    .red-window-row-1 {
+      height: 22%;
+      width: 100%;
+      top: 30px;
+    }
+
+    .red-window-row-2 {
+      height: 22%;
+      width: 100%;
+      top: 124px;
+    }
+
+
+
+    .white-window-container {
+      height: 100%;
+      width: 14%;
+      border-color: rgba(255, 255, 255, 0.3);
+      border-bottom: 3px solid #9a6a6a;
+      box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, .3);
+    }
+
+    .white-window-row-1 {
+      height: 22%;
+      width: 100%;
+      top: 20px;
+    }
+
+    .white-window-row-2 {
+      height: 22%;
+      width: 100%;
+      top: 88px;
+    }
+
+    .narrow-window {
+      height: 100%;
+      width: 90%;
+      box-shadow: inset -0.2em 0.5rem 0.4rem -0.1em rgba(35, 18, 0, .6);
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      left: 5%;
+      border-bottom: 1px solid;
+      border-color: inherit;
+    }
+
+    .narrow-window-pane {
+      border-color: inherit;
+      border-style: solid;
+    }
+    .narrow-window-top {
+      border-radius: 20% 20% 0px 0px;
+      border-width: 2px 2px 2px 0;
+      width: 92%;
+      height: 47%;
+      top: 5px;
+    }
+    .narrow-window-top::before {
+      border-radius: 16% 13% 0px 0px;
+      box-shadow: inset -2px 8px 22px 6px rgba(20, 10, 20, .5);
+      background: #938393;
+      width: 100%;
+      height: 100%;
+    }
+    .narrow-window-btm {
+      border-width: 2px 4px 0px 0;
+      width: 92%;
+      height: 48%;
+      top: 52%;
+      border-bottom: 1px solid;
+      border-color: inherit;
+    }
+  .narrow-window-btm::before {
+    box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
+    background: #736373;
+    width: 100%;
+    height: 100%;
+  }
+    .sidewalk-low {
+      right: 86px;
+      transform: perspective(.5em) rotateX(.8deg)skew(-0.03turn, 0deg);
+      background: linear-gradient(#452301, #331100);
+      background-color: #3d1b01;
+      background-image: radial-gradient(#331100, rgba(61, 27, 1,.2) 2px, transparent 115px), radial-gradient(#452301, rgba(51, 17, 0,.15) 1px, transparent 90px), radial-gradient(#331100, rgba(69, 35, 1,.1) 2px, transparent 135px), radial-gradient(rgba(51, 17, 0,.4), rgba(61, 27, 1,.1) 2px, transparent 80px);
+      background-size: 200px 175px, 150px 140px, 185px 130px, 75px 80px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      width: 19.1em;
+      height: 15em;
+      top: 643px;
+      border: 3px solid;
+      border-image-source: linear-gradient(0deg, #000, #221100);
+      border-image-slice: 1;
+    }
+/* 694B2B  */
+    .sidewalk-mid {
+      right: 112px;
+      transform: perspective(.5em) rotateX(3.9deg)skew(-0.034turn, 0deg);
+      background-color: #694B2B;
+      background-image: radial-gradient(#775533, rgba(0, 0, 0,.2) 2px, transparent 115px), radial-gradient(#654321, rgba(0, 0, 0,.15) 1px, transparent 90px), radial-gradient(#775533, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+      background-size: 80px 72px, 50px 40px, 85px 35px, 90px 50px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      width: 4em;
+      height: 11em;
+      top: 229px;
+      border: 1px solid;
+      border-image-source: linear-gradient(0deg, #221100, #443322);
+      border-image-slice: 1;
+    }
+
+    .sidewalk-brick {
+      right: 160px;
+      transform: perspective(.3em) rotateX(3deg)skew(-0.102turn, 0deg);
+      background: radial-gradient(ellipse at 90%, #eecc88 10%, #452301 72%);
+      width: 3em;
+      height: 10.575em;
+      top: 198px;
+      opacity: .8;
+      filter: brightness(80%);
+    }
+/*
+eecc88 -> ccaa66
+ccaa66 -> bd9b57
+bd9b57 -> ab8967
+ab8967 -> 896745
+896745 -> 674523
+674523 -> 563412
+
+563412
+
+452301 -> 452301
+
+*/
+    .brick-pattern {
+      background-color: #452301;
+      background-image: linear-gradient(335deg, #674523 23px, transparent 23px),
+      linear-gradient(155deg, #785634 23px, transparent 23px),
+      linear-gradient(335deg, #674523 23px, transparent 23px),
+      linear-gradient(155deg, #785634 23px, transparent 23px);
+      background-size: 58px 58px;
+      background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+      right: 226px;
+      transform: perspective(1em) rotateX(6deg)skew(-0.092turn, 0deg);
+      width: 7em;
+      height: 15.575em;
+      top: 285px;
+    }
+
+    .sidewalk-left {
+      left: 647px;
+      transform: perspective(1em) rotateX(6deg)skew(-0.2186turn, 0deg);
+      background-color: #694B2B;
+      width: 4.6em;
+      height: 6.904em;
+      top: 326px;
+    }
+
+    .no-parking-curb {
+      left: 526px;
+      transform: perspective(1em) rotateX(6deg)skew(-0.2185turn, 0deg);
+      background: linear-gradient(to left, #440800, #aa4433);
+      width: 2.5em;
+      height: 3.5em;
+      top: 389px;
+      border-radius: 20% 85% 18% 75%;
+    }
+
+    .main-street-3 {
+      right: 288px;
+      transform: perspective(.1em) rotateX(2deg)skew(-0.2038turn, 0deg);
+      background-color: #222226;
+      background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px), radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px), radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+      background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      width: 5.5em;
+      height: 3em;
+      top: 267px;
+    }
+
+    .main-street-4 {
+      right: 225px;
+      transform: perspective(.1em) rotateX(2deg)skew(-0.161turn, 0deg);
+      background-color: #222226;
+      background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px), radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px), radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+      background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      width: 4.3em;
+      height: 3em;
+      top: 267px;
+    }
+
+    .main-street-1 {
+      right: 592px;
+      transform: perspective(1em) rotateX(6deg)skew(-0.2082turn, 0deg);
+      background-color: #222226;
+      background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px),
+      radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px),
+      radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px),
+      radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+      background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
+      background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      width: 20em;
+      height: 15em;
+      top: 288px;
+      border-right: 6px dashed #7f706a;
+    }
+
+    .main-street-2 {
+        right: 335px;
+        transform: perspective(1em) rotateX(6deg)skew(-0.171turn, 0deg);
+        background-color: #222226;
+        background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px),
+        radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px),
+        radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px),
+        radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+        background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        width: 16.1em;
+        height: 15em;
+        top: 288px;
+    }
+
+    .crosswalk {
+      width: 640px;
+      height: 14px;
+      background: linear-gradient(to right, rgba(160,159,176,0) 0%, rgba(162,161,177,0) 2%, rgba(163,162,178,.8) 3%, rgba(170,169,184,.8) 11%, rgba(171,170,185,0) 12%, rgba(179,177,190,0) 20%, rgba(180,178,191,.8) 21%, rgba(187,185,197,.8) 29%, rgba(188,186,198,0) 30%, rgba(196,193,203,0) 38%, rgba(197,194,204,.8) 39%, rgba(204,201,210,.8) 47%, rgba(205,202,211,0) 48%, rgba(214,210,217,0) 57%, rgba(215,211,218,.8) 58%, rgba(222,218,224,.8) 66%, rgba(223,219,224,0) 67%, rgba(230,225,229,0) 74%, rgba(231,226,230,.8) 75%, rgba(238,233,236,.8) 83%, rgba(239,234,236,0) 84%, rgba(246,240,242,0) 91%, rgba(246,241,242,.8) 92%, rgba(254,248,248,.8) 100%);
+      top: 468px;
+      left: 386px;
+      transform: perspective(.025em) rotateX(0.1deg)skew(-0.194turn, 1deg);
+    }
+
+    .parking-space {
+      height: 13em;
+      width: 35em;
+      top: 648px;
+      left: 234px;
+      border-top: 6px solid #7f706a;
+      border-bottom: 6px solid #7f706a;
+      transform: perspective(1em) rotateX(2deg)skew(-.164turn, 3deg);
+    }
+
+    .parking-meter-1 {
+      right: 810px;
+      top: 282px;
+    }
+
+    .parking-meter-2 {
+      right: 518px;
+      top: 266px;
+      transform: scale(0.56);
+    }
+
+    .meter-side-1 {
+      background: linear-gradient(200deg, #54484b, #301f28);
+      width: 8em;
+      height: 6em;
+      transform: perspective(0) rotateY(83deg) rotateX(-5deg) skew(0.0turn, -4.5deg);
+      left: 245px;
+      top: 73px;
+      border-radius: 0 10px 40px 0;
+      box-shadow: inset 0px 7px 7px -4px rgba(255, 255, 255, .4);
+    }
+    .meter-side-2 {
+      background: linear-gradient(#88787f, #301f28);
+      width: 1.3em;
+      height: 5.2em;
+      transform: perspective(.13em) rotateY(0deg) rotateX(-1deg) skew(0.0turn, -1.5deg);
+      left: 279px;
+      top: 101px;
+      border-radius: 4px 0px 0px 10px;
+      box-shadow: inset 2px -5px 4px 1px rgba(0, 0, 0, .4);
+    }
+    .meter-loop-1 {
+      background: radial-gradient(ellipse at left bottom, #ddc6cd, #412f39 10%, #54484b 50%, #88787f 75%);
+      width: .9em;
+      height: 1.1em;
+      transform: perspective(.1em) rotateX(5deg);
+      left: 285px;
+      top: 54px;
+      border-radius: 50% 50% 0 0;
+      box-shadow: inset 1px 2px 2px -1px rgba(255, 255, 255, .5);
+    }
+    .meter-loop-2 {
+      background: radial-gradient(ellipse at right bottom, #88787f, #54484b 10%, #301f28 55%);
+      width: .8em;
+      height: 1em;
+      transform: perspective(.1em) rotateX(5deg);
+      left: 303px;
+      top: 47px;
+      border-radius: 50% 50% 0 0;
+      box-shadow: inset -2px 1px 2px -1px rgba(255, 255, 255, .3);
+    }
+
+    .coin-bevel {
+      background: linear-gradient(to top left, #080410 75%, #686470 100%);
+      width: 0.5em;
+      height: .6em;
+      transform: perspective(.1em) rotateX(-10deg) rotateY(-.1deg) skew(-3deg, 0deg);
+      left: 6px;
+      top: 5px;
+      border-radius: 11% 0 50% 50%;
+    }
+    .coin-slot-1 {
+      background: radial-gradient(ellipse at left bottom, #eeffff, #445599 55%);
+      width: 0.4em;
+      height: .66em;
+      transform: perspective(.1em) rotateX(5deg) rotateY(.4deg);
+      left: 4px;
+      top: 6px;
+      border-radius: 50% 50% 0 0;
+      box-shadow: inset 1px 2px 2px 1px rgba(0, 0, 0, .9);
+    }
+
+    .coin-slot-2 {
+      background: radial-gradient(ellipse at right bottom, #557799, #203050 25%);
+      width: 0.4em;
+      height: .64em;
+      transform: perspective(.1em) rotateX(5deg) rotateY(.4deg);
+      left: 3px;
+      top: 4px;
+      border-radius: 50% 50% 0 0;
+    }
+    .meter-top {
+      background: #43373a;
+      width: 0.6em;
+      height: .5em;
+      transform: perspective(.1em) rotateX(-1deg) skew(-63deg, 39deg);
+      left: 303px;
+      top: 66px;
+    }
+
+    .meter-post {
+      background: linear-gradient(to left, #54484b 12%, #301f28 30%, #412f39 55%, #301f28 100%);
+      height: 21em;
+      width: .8em;
+      left: 289px;
+      top: 168px;
+      border-radius: 3px;
+    }
+
+    .lamp-1 {
+        right: 240px;
+        top: 276px;
+        transform: scale(0.1);
+    }
+
+    .lamp-2 {
+        right: 262px;
+        top: 237px;
+        transform: scale(0.2);
+    }
+
+    .lamp-3 {
+        right: 320px;
+        top: 174px;
+        transform: scale(0.4);
+    }
+
+    .lamp-4 {
+        right: 458px;
+        top: 73px;
+        transform: scale(0.8);
+    }
+
+    .lamp-5 {
+        right: 750px;
+        top: -82px;
+        transform: scale(1.6);
+    }
+
+    .lamp-6 {
+      left: 398px;
+  top: 226px;
+  transform: scale(0.3);
+    }
+
+    .lamp-7 {
+      left: 638px;
+top: 250px;
+transform: scale(0.2);
+    }
+
+    .lamp-8 {
+      left: 838px;
+      top: 282px;
+      transform: scale(0.1);
+    }
+
+    .bulb {
+        width: .7em;
+        height: .7em;
+        background: radial-gradient(#ffffee, #ffff00);
+        border-radius: 50%;
+        top: 28px;
+        box-shadow: 0px 0px 28px 12px yellow;
+    }
+
+    .bulb-main-1 {
+        left: 39px;
+    }
+
+    .bulb-main-2 {
+        left: 50px;
+    }
+
+    .bulbs-reflection-1 {
+        left: -30px;
+        top: 90px;
+        transform: rotate(-34deg);
+        opacity: .4;
+    }
+
+    .bulbs-reflection-2 {
+        left: 36px;
+        top: 40px;
+        transform: rotate(8deg);
+        opacity: .3;
+    }
+
+    .top-ball {
+        width: .3em;
+        height: .3em;
+        background: #080410;
+        border-radius: 50%;
+        top: -57px;
+        left: 40px;
+        background: radial-gradient(#111, #554433);
+    }
+
+    .cap-ring {
+        width: .59em;
+        height: .5em;
+        transform: perspective(.3em) rotateX(55deg);
+        top: -56px;
+        left: 38px;
+        background: linear-gradient(to left, #aa9988 0%, #554433 49%, #998877 100%);
+    }
+
+    .top-ring {
+        width: 2.2em;
+        height: .6em;
+        transform: perspective(1em) rotateX(44deg);
+        top: -48px;
+        left: 25px;
+        background: linear-gradient(to left, #aa9988 0%, #554433 49%, #998877 100%);
+        box-shadow: 0px -4px 5px -3px #080410;
+    }
+
+    .mid-ring {
+        width: 2.9em;
+        height: .5em;
+        background: #080410;
+        transform: perspective(2em) rotateX(21deg);
+        top: -40px;
+        left: 20px;
+        background: linear-gradient(to left, #665544 0%, #111 16%, #000 63%, #221100 92%, #665544 100%);
+        box-shadow: 0px 4px 2px -2px #080410;
+    }
+
+    .low-ring {
+        width: 2.8em;
+        height: .9em;
+        transform: perspective(3em) rotateX(30deg);
+        top: -35px;
+        left: 21px;
+        background: linear-gradient(to left, #776655 0%, #221100 16%, #111 63%, #332211 92%, #776655 100%);
+    }
+
+    .glass {
+        border: 5px solid;
+        border-image-source: linear-gradient(0deg, #000, #222);
+        border-image-slice: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .panel-1 {
+        width: 4em;
+        height: 12em;
+        transform-origin: 67%;
+        transform: perspective(20em) rotateX(125deg);
+    }
+
+    .panel-2 {
+        width: 2em;
+        height: 12em;
+        transform-origin: 67%;
+        transform: perspective(20em) rotateX(125deg) rotate(-6deg);
+        left: 60px;
+        top: 1px;
+    }
+
+    .panel-3 {
+        width: 1.5em;
+        height: 12em;
+        border-left: 4px solid #333;
+        transform: perspective(19em) rotateX(125deg) rotate(0deg);
+        left: 40px;
+        top: 1px;
+    }
+
+    .panel-4 {
+        width: 4em;
+        height: 3em;
+        background: linear-gradient(to left, #222 0%, #444 100%);
+        transform: perspective(3em) rotateX(27deg) rotateY(0deg) skew(-0.01turn, 0deg);
+        top: -28px;
+        left: -3px;
+        box-shadow: -1px -2px 5px -2px #ddd;
+        border-top-left-radius: 3px;
+    }
+
+    .panel-5 {
+        width: 2.1em;
+        height: 2.9em;
+        background: radial-gradient(#998877, #776655);
+        transform: perspective(2em) rotateX(17deg) rotateY(0deg) skew(0.06turn, 4deg);
+        top: -26px;
+        left: 60px;
+        border-radius: 3px 3px 0px 0px;
+    }
+
+
+
+    .curly-s::before {
+        content: 'S';
+        color: #222;
+        top: 129px;
+        left: 49px;
+        font-size: 3em;
+        transform: perspective(1em) rotateX(-40deg) skew(-0.08turn, 0deg);
+    }
+
+    .curly-s.flip {
+        transform: scaleX(-1);
+        left: 92px;
+        text-shadow: 1px -1px 2px #bbaa99;
+    }
+
+    .curly-s.right {
+        text-shadow: -2px 1px 2px #aa9988;
+    }
+
+    .post {
+        background: linear-gradient(to left, #443322 12%, #221100 30%, #111 55%, #332211 100%);
+    }
+
+    .post-top {
+        height: 24em;
+        width: 1em;
+        left: 38px;
+        top: 140px;
+    }
+
+    .post-bottom {
+        height: 12em;
+        width: 1.5em;
+        left: 34px;
+        top: 524px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="frame">
+
+
+
+      <div class="building-panel-15">
+
+        <div class="concrete-row shorter">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row shorter">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="window-row shorter">
+          <div></div><div></div><div></div>
+        </div>
+
+      </div>
+
+      <div class="building-panel-14">
+
+        <div class="concrete-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="window-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="window-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="window-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="window-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row short">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+      </div>
+      <div class="building-panel-16">
+        <div class="concrete-row shortest">
+          <div></div><div></div>
+        </div>
+        <div class="concrete-row shortest">
+          <div></div><div></div>
+        </div>
+      </div>
+      <div class="building-panel-13">
+        <div class="concrete-row short-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row short-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row solid-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="window-row">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="window-row"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="window-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="window-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="window-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+        <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+
+      <div class="building-panel-10"></div>
+      <div class="building-panel-11"></div>
+      <div class="building-panel-12">
+        <div class="dark-window-row">
+          <div></div><div></div><div></div>
+          <div></div><div></div><div></div>
+        </div>
+        <div class="dark-window-row">
+          <div></div><div></div><div></div>
+          <div></div><div></div><div></div>
+        </div>
+      </div>
+      <div class="building-panel-7">
+        <div class="recess">
+          <div class="White-window-row-1">
+
+          <div class="white-window-container white-window-1">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="white-window-container white-window-2">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="white-window-container white-window-3">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="white-window-container white-window-4">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          </div>
+          <div class="White-window-row-2">
+
+          <div class="white-window-container white-window-1">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="white-window-container white-window-2">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="white-window-container white-window-3">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="white-window-container white-window-4">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="building-panel-6">
+        <div class="recess">
+          <div class="red-window-row-1">
+
+
+          <div class="red-window-container red-window-1">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="red-window-container red-window-2">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="red-window-container red-window-3">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          </div>
+          <div class="red-window-row-2">
+
+
+          <div class="red-window-container red-window-1">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="red-window-container red-window-2">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          <div class="red-window-container red-window-3">
+            <div class="narrow-window">
+              <div class="narrow-window-top narrow-window-pane"></div>
+              <div class="narrow-window-btm narrow-window-pane"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="building-panel-8"></div>
+        <div class="building-panel-5"></div>
+        <div class="building-panel-9"></div>
+        <div class="building-panel-4"></div>
+
+        <div class="building-panel-3"></div>
+        <div class="building-panel-2"></div>
+        <div class="building-panel-1">
+            <div class="recess">
+              <div class="green-window-container green-window-1">
+                <div class="narrow-window">
+                  <div class="narrow-window-top narrow-window-pane"></div>
+                  <div class="narrow-window-btm narrow-window-pane"></div>
+                </div>
+              </div>
+              <div class="green-window-container green-window-2">
+                <div class="narrow-window">
+                  <div class="narrow-window-top narrow-window-pane"></div>
+                  <div class="narrow-window-btm narrow-window-pane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="brick-pattern"></div>
+        <div class="sidewalk-brick"></div>
+        <div class="main-street-2"></div>
+        <div class="parking-space"></div>
+        <div class="sidewalk-left"></div>
+        <div class="main-street-3"></div>
+          <div class="main-street-4"></div>
+        <div class="main-street-1"></div>
+
+        <div class="crosswalk"></div>
+        <div class="sidewalk-mid"></div>
+        <div class="sidewalk-low"></div>
+
+        <div class="parking-meter-1">
+          <div class="meter-post"></div>
+          <div class="meter-top"></div>
+          <div class="meter-loop-2">
+            <div class="coin-slot-2"></div>
+          </div>
+          <div class="meter-loop-1">
+            <div class="coin-slot-1"></div>
+          </div>
+          <div class="meter-side-1"></div>
+          <div class="meter-side-2">
+            <div class="coin-bevel"></div>
+          </div>
+        </div>
+
+        <div class="parking-meter-2">
+          <div class="meter-post"></div>
+          <div class="meter-top"></div>
+          <div class="meter-loop-2">
+            <div class="coin-slot-2"></div>
+          </div>
+          <div class="meter-loop-1">
+            <div class="coin-slot-1"></div>
+          </div>
+          <div class="meter-side-1"></div>
+          <div class="meter-side-2">
+            <div class="coin-bevel"></div>
+          </div>
+        </div>
+
+
+        <div class="lamp-5">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+        <div class="lamp-4">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+        <div class="lamp-2">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+        <div class="lamp-3">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+        <div class="lamp-6">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+          <div class="no-parking-curb"></div>
+        <div class="lamp-1">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+        <div class="lamp-7">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+        <div class="lamp-8">
+            <div class="top-ball"></div>
+            <div class="cap-ring"></div>
+            <div class="top-ring"></div>
+            <div class="bulbs-reflection-1">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="panel-3"></div>
+            <div class="bulbs-main">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="bulbs-reflection-2">
+                <div class="bulb bulb-main-1"></div>
+                <div class="bulb bulb-main-2"></div>
+            </div>
+            <div class="curly-s right"></div>
+            <div class="curly-s flip"></div>
+            <div class="panel-1 glass"></div>
+            <div class="panel-2 glass"></div>
+            <div class="panel-4"></div>
+            <div class="low-ring"></div>
+            <div class="mid-ring"></div>
+            <div class="panel-5"></div>
+            <div class="post post-top"></div>
+            <div class="post post-bottom"></div>
+        </div>
+    </div>
+</body>

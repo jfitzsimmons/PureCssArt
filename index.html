@@ -1,27 +1,23 @@
+<!DOCTYPE html>
+<!--  
+
+  single point is 
+  x: 1374px
+  y: 684px
+
+-->
 <style>
-    body {
-
-        /*  background-color: #f9ea8f;
-    background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
-    background-color: #f6d327;
-    background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%); */
-
-        /* background-color: #fdb813;
-background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
-        background-color: #edd812;
-        background-image: linear-gradient(315deg, #edd812 0%, #766a65 74%);
-        background-color: #d2a813;
-background-image: linear-gradient(315deg, #d2a813 0%, #000000 74%);
-background-color: #fce055;
-background-image: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
-background-color: #baba00;
-background-image: linear-gradient(315deg, #baba00 0%, #ba1313 74%);
-background-color: #0cbaba;
-background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-background: green; */
-
-
-    }
+  .temp-sp {
+    border-radius: 50%;
+    background: green;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 1374px;
+    top: 216px;
+    z-index: 100;
+  }
+  
 
     body * {
         box-sizing: border-box;
@@ -44,6 +40,17 @@ background: green; */
         width: 1500px;
         height: 900px;
         overflow: hidden;
+    }
+
+    .building-panel-right-1 {
+      right: 20px;
+      transform: perspective(0) rotateX(0deg) scaleX(-1) rotateY(.92deg) skew(0.0turn, 2deg);
+      background: linear-gradient(117deg, #234511, #507022);
+      width: 52px;
+      height: 745px;
+      top: -104px;
+      box-shadow: -3px -35px 86px -10px #080410;
+      
     }
 
     .building-panel-1 {
@@ -94,64 +101,70 @@ background: green; */
       height: 19em;
       top: 102px;
     }
+    .building-panel-right-9 {
+      right: 3px;
+      background-color: #280515;
+      width: 10em;
+      height: 21em;
+      top: 34px;
+    }
     .building-panel-8 {
-      left: 222px;
+      left: 226px;
       background-color: #401818;
       width: 26.7em;
       height: 20.5em;
-      top: 21px;
+      top: 51px;
     }
     .building-panel-6 {
       left: 660px;
-      transform: perspective(.9em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 7deg);
+      transform: perspective(15px) rotateX(0deg) rotateY(1.3deg) skew(0turn, 0deg);
       background: linear-gradient(117deg, #602020, #901020);
       width: 8.1em;
-      height: 19.5em;
-      top: 58px;
+      height: 18.5em;
+      top: 67px;
     }
 
     .building-panel-7 {
-      left: 796px;
-      transform: perspective(.7em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 6deg);
+      left: 726px;
+      transform: perspective(11px) rotateX(0deg) rotateY(1.1deg) skew(0turn, 0deg);
       background: linear-gradient(150deg, #775777, #efaf9f);
       width: 8em;
-      height: 13.8em;
-      top: 120px;
+      height: 10.8em;
+      top: 130px;
     }
 
     .building-panel-10 {
-      left: 880px;
+      left: 881px;
       background-color: #a89080;
       width: 7.3em;
-      height: 10.7em;
-      top: 143px;
+      height: 11.5em;
+      top: 126px;
       border: 3px solid #2a2031;
     }
     .building-panel-11 {
       left: 998px;
-      transform: perspective(.5em) rotateX(0deg) rotateY(1.9deg) skew(0turn, 5deg);
+      transform: perspective(6px) rotateX(0deg) rotateY(01deg) skew(0turn, 0deg);
       background: linear-gradient(150deg, #080410, #2a2031);
       width: 2em;
-      height: 10em;
-      top: 150px;
+      height: 11em;
+      top: 130px;
     }
 
     .building-panel-12 {
-      left: 1047px;
-      transform: perspective(.39em) rotateX(0deg) rotateY(2.1deg) skew(0turn, 2.9deg);
+      left: 1038px;
+      transform: perspective(0) rotateX(0deg) rotateY(.2deg) skew(0turn, -1deg);
       background: linear-gradient(150deg, #332333, #993344);
       width: 6em;
-      height: 5.8em;
-      top: 199px;
+      height: 7.8em;
+      top: 164px;
     }
 
     .building-panel-13 {
-      left: 610px;
-      background: linear-gradient(77deg, #705f90 60%, transparent 75%),
-                  linear-gradient(0deg, #400f27 60%, transparent 85%);
+      left: 553px;
+      background: linear-gradient(77deg, #705f90 60%, transparent 75%), linear-gradient(0deg, #400f27 60%, transparent 85%);
       width: 525px;
-      height: 280px;
-      top: 23px;
+      height: 264px;
+      top: 4px;
       transform: perspective(2em) rotateX(-.2deg);
     }
 
@@ -164,28 +177,28 @@ background: green; */
     }
 
     .building-panel-14 {
-      left: 1138px;
+      left: 1079px;
       background: linear-gradient(150deg, #400f27, #a03fb0);
-      width: 60px;
-      height: 154px;
-      top: 134px;
-      transform: perspective(.1em) rotateX(0deg) rotateY(.4deg) skew(-0.004turn, 2.9deg);
+      width: 75px;
+      height: 143px;
+      top: 113px;
+      transform: perspective(1.6em) rotateX(0deg) rotateY(6deg) skew(0.0turn, 8deg);    
     }
 
     .building-panel-15 {
-      left: 1137px;
+      left: 1080px;
       background: #400f27;
       width: 40px;
-      height: 61px;
-      top: 69px;
-      transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 21.9deg);
+      height: 55px;
+      top: 50px;
+      transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 25.9deg);
     }
     .building-panel-16 {
-      left: 1004px;
+      left: 947px;
       width: 30px;
-      height: 41px;
-      top: 32px;
-      transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 21.9deg);
+      height: 37px;
+      top: 14px;
+      transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 24.5deg);
     }
 
 
@@ -427,43 +440,54 @@ background: green; */
     height: 100%;
   }
     .sidewalk-low {
-      right: 86px;
-      transform: perspective(.5em) rotateX(.8deg)skew(-0.03turn, 0deg);
+      right: 37px;
+      transform: perspective(.5em) rotateX(.8deg)skew(-0.01turn, 0deg);
       background: linear-gradient(#452301, #331100);
+        background-color: rgba(0, 0, 0, 0);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-image: linear-gradient(rgb(69, 35, 1), rgb(51, 17, 0));
+        background-size: auto;
       background-color: #3d1b01;
       background-image: radial-gradient(#331100, rgba(61, 27, 1,.2) 2px, transparent 115px), radial-gradient(#452301, rgba(51, 17, 0,.15) 1px, transparent 90px), radial-gradient(#331100, rgba(69, 35, 1,.1) 2px, transparent 135px), radial-gradient(rgba(51, 17, 0,.4), rgba(61, 27, 1,.1) 2px, transparent 80px);
       background-size: 200px 175px, 150px 140px, 185px 130px, 75px 80px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-      width: 19.1em;
+      width: 14.6em;
       height: 15em;
       top: 643px;
       border: 3px solid;
+        border-image-slice: 100%;
+        border-image-source: none;
       border-image-source: linear-gradient(0deg, #000, #221100);
       border-image-slice: 1;
     }
 /* 694B2B  */
     .sidewalk-mid {
-      right: 112px;
-      transform: perspective(.5em) rotateX(3.9deg)skew(-0.034turn, 0deg);
+      right: 116px;
+      transform: perspective(0) rotateX(13deg)skew(-0.01turn);
       background-color: #694B2B;
       background-image: radial-gradient(#775533, rgba(0, 0, 0,.2) 2px, transparent 115px), radial-gradient(#654321, rgba(0, 0, 0,.15) 1px, transparent 90px), radial-gradient(#775533, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
       background-size: 80px 72px, 50px 40px, 85px 35px, 90px 50px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-      width: 4em;
-      height: 11em;
-      top: 229px;
+      width: 0;
+      height: 11px;
+      top: 212px;
       border: 1px solid;
+        border-image-slice: 100%;
+        border-image-source: none;
+      border-image-slice: 100%;
+      border-image-source: none;
       border-image-source: linear-gradient(0deg, #221100, #443322);
       border-image-slice: 1;
     }
 
     .sidewalk-brick {
-      right: 160px;
-      transform: perspective(.3em) rotateX(3deg)skew(-0.102turn, 0deg);
+      right: 118px;
+      transform: perspective(0) rotateX(15deg)skew(-0.089turn);
       background: radial-gradient(ellipse at 90%, #eecc88 10%, #452301 72%);
-      width: 3em;
-      height: 10.575em;
-      top: 198px;
+      width: 3px;
+      height: 9px;
+      top: 213px;
       opacity: .8;
       filter: brightness(80%);
     }
@@ -480,79 +504,99 @@ ab8967 -> 896745
 452301 -> 452301
 
 */
-    .brick-pattern {
+    .brick-pattern-01 {
       background-color: #452301;
-      background-image: linear-gradient(335deg, #674523 23px, transparent 23px),
-      linear-gradient(155deg, #785634 23px, transparent 23px),
-      linear-gradient(335deg, #674523 23px, transparent 23px),
-      linear-gradient(155deg, #785634 23px, transparent 23px);
+      background-image: linear-gradient(335deg, #674523 23px, transparent 23px), linear-gradient(155deg, #785634 23px, transparent 23px), linear-gradient(335deg, #674523 23px, transparent 23px), linear-gradient(155deg, #785634 23px, transparent 23px);
       background-size: 58px 58px;
       background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-      right: 226px;
-      transform: perspective(1em) rotateX(6deg)skew(-0.092turn, 0deg);
-      width: 7em;
+      right: 256px;
+      transform: perspective(60px) rotateX(8deg)skew(-0.073turn, 0deg);
+      width: 11em;
       height: 15.575em;
-      top: 285px;
+      top: 565px;
+    }
+
+    .brick-pattern-02 {
+      background-color: #452301;
+      background-image: linear-gradient(335deg, #674523 23px, transparent 23px), linear-gradient(155deg, #785634 23px, transparent 23px), linear-gradient(335deg, #674523 23px, transparent 23px), linear-gradient(155deg, #785634 23px, transparent 23px);
+      background-size: 58px 58px;
+      background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+      right: 421px;
+      transform: perspective(60px) rotateX(8deg)skew(-0.109turn, 0deg);
+      width: 12em;
+      height: 15.575em;
+      top: 565px;
     }
 
     .sidewalk-left {
-      left: 647px;
-      transform: perspective(1em) rotateX(6deg)skew(-0.2186turn, 0deg);
+      right: 178px;
+      transform: perspective(0px) rotateX(2deg)skew(-0.2099turn, 0deg);
       background-color: #694B2B;
-      width: 4.6em;
-      height: 6.904em;
-      top: 326px;
+      width: 14px;
+      height: 51px;
+      top: 209px;
     }
 
     .no-parking-curb {
-      left: 526px;
-      transform: perspective(1em) rotateX(6deg)skew(-0.2185turn, 0deg);
+      left: 635px;
+      transform: perspective(1em) rotateX(6deg)skew(-0.2088turn, 0deg);
       background: linear-gradient(to left, #440800, #aa4433);
       width: 2.5em;
       height: 3.5em;
-      top: 389px;
+      top: 390px;
       border-radius: 20% 85% 18% 75%;
     }
 
     .main-street-3 {
-      right: 288px;
-      transform: perspective(.1em) rotateX(2deg)skew(-0.2038turn, 0deg);
+      right: 136px;
+      transform: perspective(0) rotateX(12deg)skew(-0.197turn, 0deg);
       background-color: #222226;
       background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px), radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px), radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
       background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-      width: 5.5em;
-      height: 3em;
-      top: 267px;
+      width: 6px;
+      height: 10px;
+      top: 218px;
     }
 
     .main-street-4 {
-      right: 225px;
-      transform: perspective(.1em) rotateX(2deg)skew(-0.161turn, 0deg);
+      right: 122px;
+      transform: perspective(0) rotateX(12deg)skew(-0.163turn, 0deg);
       background-color: #222226;
       background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px), radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px), radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
       background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-      width: 4.3em;
-      height: 3em;
-      top: 267px;
+      width: 6px;
+      height: 10px;
+      top: 214px;
     }
 
     .main-street-1 {
-      right: 592px;
-      transform: perspective(1em) rotateX(6deg)skew(-0.2082turn, 0deg);
-      background-color: #222226;
-      background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px),
-      radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px),
-      radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px),
-      radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+      right: 523px;
+      transform: perspective(6px) rotateX(2deg)skew(-0.1983turn, 0deg);
+      background-color: #0f08;
+      background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px), radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px), radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
       background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-      width: 20em;
-      height: 15em;
-      top: 288px;
+      width: 230px;
+      height: 18em;
+      top: 248px;
       border-right: 6px dashed #7f706a;
-    }
+  }
+
+  .main-street-1-right {
+    right: 301px;
+    transform: perspective(6px) rotateX(2deg) skew(-0.166turn, 0deg);
+    background-color: #0888;
+    background-image: radial-gradient(#434336, rgba(85, 85, 72,.2) 2px, transparent 115px), radial-gradient(#544336, rgba(67, 67, 54,.15) 1px, transparent 90px), radial-gradient(#434336, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+    background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    width: 230px;
+    height: 18em;
+    top: 247px;
+    border-left: 6px dashed #7f706a;
+  }
+    
 
     .main-street-2 {
         right: 335px;
@@ -603,7 +647,8 @@ ab8967 -> 896745
       background: linear-gradient(200deg, #54484b, #301f28);
       width: 8em;
       height: 6em;
-      transform: perspective(0) rotateY(83deg) rotateX(-5deg) skew(0.0turn, -4.5deg);
+      
+      transform: rotateY(83deg) rotateX(-5deg) skew(0.0turn, -4.5deg);
       left: 245px;
       top: 73px;
       border-radius: 0 10px 40px 0;
@@ -688,32 +733,32 @@ ab8967 -> 896745
     }
 
     .lamp-1 {
-        right: 240px;
-        top: 276px;
+        right: 168px;
+        top: 204px;
         transform: scale(0.1);
     }
 
     .lamp-2 {
-        right: 262px;
-        top: 237px;
+        right: 213px;
+        top: 188px;
         transform: scale(0.2);
     }
 
     .lamp-3 {
-        right: 320px;
-        top: 174px;
+        right: 300px;
+        top: 158px;
         transform: scale(0.4);
     }
 
     .lamp-4 {
-        right: 458px;
-        top: 73px;
+        right: 483px;
+        top: 97px;
         transform: scale(0.8);
     }
 
     .lamp-5 {
-        right: 750px;
-        top: -82px;
+        right: 861px;
+        top: -25px;
         transform: scale(1.6);
     }
 
@@ -724,14 +769,14 @@ ab8967 -> 896745
     }
 
     .lamp-7 {
-      left: 638px;
-top: 250px;
+      left: 744px;
+top: 229px;
 transform: scale(0.2);
     }
 
     .lamp-8 {
-      left: 838px;
-      top: 282px;
+      left: 1033px;
+      top: 239px;
       transform: scale(0.1);
     }
 
@@ -911,9 +956,8 @@ transform: scale(0.2);
 
 <body>
     <div class="frame">
-
-
-
+      <div class="temp-sp"></div>
+      
       <div class="building-panel-15">
 
         <div class="concrete-row shorter">
@@ -1131,6 +1175,7 @@ transform: scale(0.2);
         </div>
       </div>
       <div class="building-panel-8"></div>
+      
         <div class="building-panel-5"></div>
         <div class="building-panel-9"></div>
         <div class="building-panel-4"></div>
@@ -1138,24 +1183,26 @@ transform: scale(0.2);
         <div class="building-panel-3"></div>
         <div class="building-panel-2"></div>
         <div class="building-panel-1">
-            <div class="recess">
-              <div class="green-window-container green-window-1">
-                <div class="narrow-window">
-                  <div class="narrow-window-top narrow-window-pane"></div>
-                  <div class="narrow-window-btm narrow-window-pane"></div>
-                </div>
+          <div class="recess">
+            <div class="green-window-container green-window-1">
+              <div class="narrow-window">
+                <div class="narrow-window-top narrow-window-pane"></div>
+                <div class="narrow-window-btm narrow-window-pane"></div>
               </div>
-              <div class="green-window-container green-window-2">
-                <div class="narrow-window">
-                  <div class="narrow-window-top narrow-window-pane"></div>
-                  <div class="narrow-window-btm narrow-window-pane"></div>
-                </div>
+            </div>
+            <div class="green-window-container green-window-2">
+              <div class="narrow-window">
+                <div class="narrow-window-top narrow-window-pane"></div>
+                <div class="narrow-window-btm narrow-window-pane"></div>
               </div>
             </div>
           </div>
+        </div>
 
 
-        <div class="brick-pattern"></div>
+
+        <div class="brick-pattern-01"></div>
+        <div class="brick-pattern-02"></div>
         <div class="sidewalk-brick"></div>
         <div class="main-street-2"></div>
         <div class="parking-space"></div>
@@ -1163,9 +1210,26 @@ transform: scale(0.2);
         <div class="main-street-3"></div>
           <div class="main-street-4"></div>
         <div class="main-street-1"></div>
-
+        <div class="main-street-1-right"></div>
         <div class="crosswalk"></div>
         <div class="sidewalk-mid"></div>
+        <div class="building-panel-right-9"></div>
+        <div class="building-panel-right-1">
+          <div class="recess">
+            <div class="green-window-container green-window-1">
+              <div class="narrow-window">
+                <div class="narrow-window-top narrow-window-pane"></div>
+                <div class="narrow-window-btm narrow-window-pane"></div>
+              </div>
+            </div>
+            <div class="green-window-container green-window-2">
+              <div class="narrow-window">
+                <div class="narrow-window-top narrow-window-pane"></div>
+                <div class="narrow-window-btm narrow-window-pane"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="sidewalk-low"></div>
 
         <div class="parking-meter-1">
@@ -1426,3 +1490,4 @@ transform: scale(0.2);
         </div>
     </div>
 </body>
+</html>

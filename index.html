@@ -7,6 +7,10 @@
 
 -->
 <style>
+  body {
+    background: #000;
+  }
+
   .temp-sp {
     border-radius: 50%;
     background: green;
@@ -32,25 +36,31 @@
     }
 
     .frame {
-      /*  background-color: #003b64;
-        background-image: radial-gradient(#bbb022 0%, #001942 70%, #000 100%); */
-        background-color: #eec0c6;
-        background-image: radial-gradient(circle at 90%, #bbb022 0%, #bb9092 25%, #001942 100%);
+      background-color: #eec0c6;
+      background-image: radial-gradient(circle at 90%, #999002 0%, #997072 25%, #000730 100%);
+      width: 1500px;
+      height: 900px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
 
-        width: 1500px;
-        height: 900px;
-        overflow: hidden;
+    .sun-lighting-overlay {
+      background-image: radial-gradient(circle at 90%, #bbb022 0%, #bb9092 25%, #001942 100%);
+      width: 1500px;
+      height: 900px;
+      margin-top: -10px;
+      opacity: 0.03;
     }
 
     .building-panel-right-1 {
-      right: 20px;
+      right: 15px;
       transform: perspective(0) rotateX(0deg) scaleX(-1) rotateY(.92deg) skew(0.0turn, 2deg);
       background: linear-gradient(117deg, #234511, #507022);
       width: 52px;
       height: 745px;
-      top: -104px;
+      top: -74px;
       box-shadow: -3px -35px 86px -10px #080410;
-      
     }
 
     .building-panel-1 {
@@ -109,19 +119,19 @@
       top: 34px;
     }
     .building-panel-8 {
-      left: 226px;
+      left: 192px;
       background-color: #401818;
       width: 26.7em;
-      height: 20.5em;
-      top: 51px;
+      height: 22.1em;
+      top: 47px;
     }
     .building-panel-6 {
-      left: 660px;
+      left: 626px;
       transform: perspective(15px) rotateX(0deg) rotateY(1.3deg) skew(0turn, 0deg);
       background: linear-gradient(117deg, #602020, #901020);
       width: 8.1em;
-      height: 18.5em;
-      top: 67px;
+      height: 20em;
+      top: 64px;
     }
 
     .building-panel-7 {
@@ -1199,6 +1209,7 @@ transform: scale(0.2);
           </div>
         </div>
 
+        <div class="sun-lighting-overlay"></div>
 
 
         <div class="brick-pattern-01"></div>

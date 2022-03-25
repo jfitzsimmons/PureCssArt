@@ -210,8 +210,92 @@
       top: 14px;
       transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 24.5deg);
     }
+    .facade {
+      width: 100%;
+      height: 85%;
+      bottom: 0;
+      border-top: 5px solid #84acb4;
+    }
+    .facade-2 {
+      width: 100%;
+      height: 85%;
+      bottom: 0
+    }
+    .window-side-1 {
+      width: 33%;
+      height: 100%;
+      border-left: 5px solid #84acb4;
+      border-right: 5px solid #84acb4;
+      right: 0;
+      bottom: 0;
+    }
+    .window-side-2 {
+      width: 33%;
+      height: 100%;
+      border-left: 5px solid #84acb4;
+      border-right: 5px solid #84acb4;
+      left: 0;
+      bottom: 0;
+    }
+    .door {
+      width: 34%;
+      height: 100%;
+      right: 33%;
+    }
+    .solid-fullpane-1 {
+      background-color: #DEE4DA;
+      border: 3px solid #DEE4DA;
+      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
+      width: 100%;
+      height: 20%;
+    }
+    .clear-halfpane-short-1{
+      border: 3px solid #DEE4DA;
+      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
+      width: 52%;
+      height: 20%;
+      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
+      background: #736373;
+      top: 19%;
+    }
+    .clear-halfpane-short-2{
+      border: 3px solid #DEE4DA;
+      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
+      width: 52%;
+      height: 20%;
+      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
+      background: #736373;
+      top: 19%;
+      right: 0;
+    }
+    .clear-halfpane-tall-1{
+      border: 3px solid #DEE4DA;
+      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
+      width: 52%;
+      height: 53%;
+      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
+      background: #736373;
+      top: 38%;
+      right: 0;
+    }
+    .clear-halfpane-tall-2{
+      border: 3px solid #DEE4DA;
+      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
+      width: 52%;
+      height: 53%;
+      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
+      background: #736373;
+      top: 38%;
 
-
+    }
+    .solid-fullpane-2{
+      background-color: #DEE4DA;
+      border: 3px solid #DEE4DA;
+      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
+      width: 100%;
+      height: 10%;
+      bottom: 0;
+    }
     .concrete-row {
       height: 7%;
       width: 100%;
@@ -304,6 +388,47 @@
       border: 1px solid rgba(111, 80 ,99 ,.4);
       position: relative;
       float: left;
+    }
+
+    .door-recess {
+      left: 3.5%;
+      top: 20.5%;
+      width: 93%;
+      height: 79%;
+      box-shadow: inset -14px 25px 8px 4px rgba(0, 0, 0, .3);
+    }
+
+    .door-frame {
+      left: 19px;
+      top: 15.5%;
+      width: 55%;
+      height: 79%;
+      box-shadow: inset -14px 0px 8px 4px rgba(0, 0, 0, .3);
+      background: #830B0A;
+    }
+    .door-frame-2 {
+      right: 24px;
+      top: 15.5%;
+      width: 58%;
+      height: 79%;
+      box-shadow: inset -14px 0px 8px 4px rgba(0, 0, 0, .3);
+      background: #830B0A;
+    }
+    .door-window {
+      left: 3px;
+      top: 3.5%;
+      width: 92%;
+      height: 63%;
+      box-shadow: inset -14px 0px 8px 4px rgba(0, 0, 0, .3);
+      background: #736373;
+    }
+    .door-window-2 {
+      right: 3px;
+      top: 3.5%;
+      width: 92%;
+      height: 63%;
+      box-shadow: inset -14px 0px 8px 4px rgba(0, 0, 0, .3);
+      background: #736373;
     }
 
     .recess {
@@ -1155,6 +1280,35 @@ ab8967 -> 896745
           </div>
           </div>
         </div>
+        <div class="facade-2">
+          <div class="window-side-1">
+            <div class="solid-fullpane-1"></div>
+            <div class="clear-halfpane-short-1"></div>
+            <div class="clear-halfpane-short-2"></div>
+            <div class="clear-halfpane-tall-1"></div>
+            <div class="clear-halfpane-tall-2"></div>
+            <div class="solid-fullpane-2"></div>
+          </div>
+          <div class="door">
+            <div class="solid-fullpane-1"></div>
+            <div class="door-recess">
+              <div class="door-frame-2">
+                <div class="door-window-2"></div>
+                </div>
+            </div>
+          </div>
+            <div class="window-side-2">
+              <div class="solid-fullpane-1"></div>
+            <div class="clear-halfpane-short-1"></div>
+            <div class="clear-halfpane-short-2"></div>
+            <div class="clear-halfpane-tall-1"></div>
+            <div class="clear-halfpane-tall-2"></div>
+            <div class="solid-fullpane-2"></div>
+            </div>
+
+       
+          
+        </div>
       </div>
       <div class="building-panel-6">
         <div class="recess">
@@ -1206,7 +1360,37 @@ ab8967 -> 896745
       </div>
       <div class="building-panel-8"></div>
       
-        <div class="building-panel-5"></div>
+        <div class="building-panel-5">
+          <div class="facade">
+            <div class="window-side-1">
+              <div class="solid-fullpane-1"></div>
+              <div class="clear-halfpane-short-1"></div>
+              <div class="clear-halfpane-short-2"></div>
+              <div class="clear-halfpane-tall-1"></div>
+              <div class="clear-halfpane-tall-2"></div>
+              <div class="solid-fullpane-2"></div>
+            </div>
+            <div class="door">
+              <div class="solid-fullpane-1"></div>
+              <div class="door-recess">
+                <div class="door-frame">
+                  <div class="door-window"></div>
+                  </div>
+              </div>
+            </div>
+              <div class="window-side-2">
+                <div class="solid-fullpane-1"></div>
+              <div class="clear-halfpane-short-1"></div>
+              <div class="clear-halfpane-short-2"></div>
+              <div class="clear-halfpane-tall-1"></div>
+              <div class="clear-halfpane-tall-2"></div>
+              <div class="solid-fullpane-2"></div>
+              </div>
+
+         
+            
+          </div>
+        </div>
         <div class="building-panel-9"></div>
         <div class="building-panel-4"></div>
 

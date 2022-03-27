@@ -44,7 +44,13 @@
       margin: 0;
       padding: 0;
     }
-
+    .flair {
+      background: radial-gradient(circle at 80% 19%, #936C6F66, #936C6F00 45.71%), radial-gradient(circle at 80.7% 90%, #050B3255, #050B3200 35.71%), radial-gradient(circle at 33.3% 55%, #ab992622, #AB992600 35.71%) transparent;
+      right: -150px;
+      width: 1100px;
+      height: 1100px;
+      top: -190px;
+    }
     .sun-lighting-overlay {
       background-image: radial-gradient(circle at 90%, #bbb022 0%, #bb9092 25%, #001942 100%);
       width: 1500px;
@@ -210,6 +216,158 @@
       top: 14px;
       transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 24.5deg);
     }
+    .picnic-light{
+      width: 10px;
+      height: 52px;
+      background: rgb(255,255,255);
+      background: linear-gradient(rgba(255,255,200,.9) -1%,rgba(255,255,155,.8) 79%, rgba(255, 255, 105,0)100%);
+      box-shadow: 0px -9px 5px 5px #ffd9,inset 0px 20px 4px 0px #ffd1;
+      top: 102px;
+      right: 129px;
+      transform: perspective(1px) rotateX(2deg) skew(0.0turn, 0deg);
+      box-sizing: content-box;
+      border-left: 0px solid #ffd3;
+    }
+    .picnic {
+      right: 187px;
+top: 369px;
+transform: perspective(170px) rotateX(44deg) skew(-0.05turn,0deg);
+    }
+    .bench-1-legs::before {
+  content: '^';
+font-size: 63px;
+top: 78px;
+color: #310;
+left: 107px;
+font-weight: bold;
+
+}
+
+.picnic-2 {
+      left: 387px;
+top: 169px;
+transform: perspective(170px) rotateX(44deg) skew(-0.05turn,0deg);
+    }
+
+    .bench-1 {
+      width: 30px;
+height: 72px;
+background-color: #331100;
+right: -27px;
+top: 24px;
+box-shadow: 5px 5px 10px 0px #210, 1px 1px 2px 0px #210;border-radius: 5px;
+border: 2px solid #320;
+    }
+    .bench-2-legs::before {
+      content: '^';
+      font-size: 63px;
+      top: 79px;
+      color: #310;
+      left: 3px;
+      transform: skew(.07turn,0deg);
+      font-weight: bold;
+
+}
+.bench-2 {
+  width: 30px;
+height: 72px;
+background-color: #331100;
+left: 108px;
+top: 23px;
+box-shadow: 5px 5px 10px 0px #210, 1px 1px 2px 0px #210;border-radius: 5px;
+border: 2px solid #320;
+}
+    .table-legs::before {
+      content: '^';
+font-size: 154px;
+top: 28px;
+color: #310;
+left: 28px;
+font-weight: bold;
+transform: skew(.03turn,0deg);
+
+}
+.table {
+  width: 96px;
+height: 80px;
+background-color: #331100;
+box-shadow: 5px 5px 10px 0px #210, 1px 1px 2px 0px #210;left: 14px;
+border-radius: 5px;
+border: 2px solid #320;
+
+}
+    .awning {
+      background-color: #110;
+right: 0;
+width: 248px;
+height: 100px;
+top: 100px;
+border-radius: 10px 0 0 0;
+    }
+    .awning__post-1 {
+      right: 149px;
+width: 7px;
+height: 171px;
+top: 203px;
+    }
+    .awning__post-2 {
+      right: 189px;
+width: 10px;
+height: 352px;
+top: 98px;
+    }
+    .bunting{
+      right: 0;
+width: 248px;
+height: 100px;
+border: 17px dotted #110;
+top: 11px;
+    }
+    .bunting-rear{
+      right: -16px;
+      width: 248px;
+      height: 100px;
+      border: 17px dotted #110;
+      top: 111px;
+    }
+    .ad-1{
+      background: #442A1C88;
+      color: #CAAD9188;
+      width: 100px;
+      height: 23px;
+      border: 2px solid #CAAD9144;
+      font-size: 13px;
+      padding: 3px 6px;
+      left: 5px;
+      top: 5px;
+    }
+    .ad-2{
+      background: #442A1C88;
+      color: #CAAD9188;
+      width: 38px;
+      height: 29px;
+      border: 2px solid #CAAD9144;
+      font-size: 22px;
+      padding: 0px 6px;
+      left: 5px;
+      top: 26px;
+    }
+
+    .ad-3::after {
+      content: "A.W.MILES Dept. Store";
+    }
+    .ad-3 {
+      background: #442A1C88;
+      color: #CDB26C66;
+      width: 100px;
+      height: 54px;
+      border: 6px solid #CAAD9144;
+      font-size: 15px;
+      padding-top: 6px;
+      left: 5px;
+      top: 84px;
+      text-align: center;
+    }
     .facade {
       width: 100%;
       height: 85%;
@@ -249,42 +407,58 @@
       width: 100%;
       height: 20%;
     }
+    .lit-window-2 {
+      background: #ed8e;
+    }
+    .half-lit-window-2 {
+      background: #dc8d;
+    }
+    .semi-lit-window-2 {
+      background: #cb7c;
+    }
+    .lit-window-1 {
+      background: #f3e373;
+      box-shadow: inset -4px 2px 7px 0px rgba(10, 5, 10, .4), 0px 4px 9px 0px #f3e37388;
+    }
+    .half-lit-window-1 {
+      background: #cb7;
+box-shadow: inset -4px 2px 7px 0px rgba(10, 5, 10, .2), 0px 4px 9px 0px #f3e37377;
+    }
+
+    .semi-lit-window-1 {
+      background: #aa7;
+box-shadow: inset -4px 2px 7px 0px rgba(10, 5, 10, .1), 0px 4px 9px 0px #f3e37366;
+    }
+    
+    .unlit-window-1 {
+      background: #736373;
+      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
+
+    }
     .clear-halfpane-short-1{
       border: 3px solid #DEE4DA;
-      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
       width: 52%;
       height: 20%;
-      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
-      background: #736373;
       top: 19%;
     }
     .clear-halfpane-short-2{
       border: 3px solid #DEE4DA;
-      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
       width: 52%;
       height: 20%;
-      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
-      background: #736373;
       top: 19%;
       right: 0;
     }
     .clear-halfpane-tall-1{
       border: 3px solid #DEE4DA;
-      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
       width: 52%;
       height: 53%;
-      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
-      background: #736373;
       top: 38%;
       right: 0;
     }
     .clear-halfpane-tall-2{
       border: 3px solid #DEE4DA;
-      box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
       width: 52%;
       height: 53%;
-      box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
-      background: #736373;
       top: 38%;
 
     }
@@ -415,20 +589,11 @@
       background: #830B0A;
     }
     .door-window {
-      left: 3px;
-      top: 3.5%;
-      width: 92%;
-      height: 63%;
-      box-shadow: inset -14px 0px 8px 4px rgba(0, 0, 0, .3);
-      background: #736373;
-    }
-    .door-window-2 {
       right: 3px;
       top: 3.5%;
       width: 92%;
       height: 63%;
-      box-shadow: inset -14px 0px 8px 4px rgba(0, 0, 0, .3);
-      background: #736373;
+      border: 1px solid #630B0A88;
     }
 
     .recess {
@@ -575,41 +740,37 @@
     height: 100%;
   }
     .sidewalk-low {
-      right: 37px;
+      right: 31px;
       transform: perspective(.5em) rotateX(.8deg)skew(-0.01turn, 0deg);
-      background: linear-gradient(#452301, #331100);
-        background-color: rgba(0, 0, 0, 0);
-        background-position-x: 0%;
-        background-position-y: 0%;
-        background-image: linear-gradient(rgb(69, 35, 1), rgb(51, 17, 0));
-        background-size: auto;
-      background-color: #3d1b01;
+      background-color: #3d1b0188;
       background-image: radial-gradient(#331100, rgba(61, 27, 1,.2) 2px, transparent 115px), radial-gradient(#452301, rgba(51, 17, 0,.15) 1px, transparent 90px), radial-gradient(#331100, rgba(69, 35, 1,.1) 2px, transparent 135px), radial-gradient(rgba(51, 17, 0,.4), rgba(61, 27, 1,.1) 2px, transparent 80px);
       background-size: 200px 175px, 150px 140px, 185px 130px, 75px 80px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
       width: 14.6em;
       height: 15em;
       top: 643px;
-      border: 3px solid;
-        border-image-slice: 100%;
-        border-image-source: none;
-      border-image-source: linear-gradient(0deg, #000, #221100);
+      border: 3px solid #2108;
+      border-image-slice: 100%;
+      border-image-source: none;
+      border-image-source: linear-gradient(0deg, #0008, #2108);
       border-image-slice: 1;
     }
-/* 694B2B  */
+/* 553311  */
     .sidewalk-mid {
-      right: 116px;
-      transform: perspective(0) rotateX(13deg)skew(-0.01turn);
-      background-color: #694B2B;
-      background-image: radial-gradient(#775533, rgba(0, 0, 0,.2) 2px, transparent 115px), radial-gradient(#654321, rgba(0, 0, 0,.15) 1px, transparent 90px), radial-gradient(#775533, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
+      right: 91px;
+      transform: perspective(0) rotateX(1deg)skew(0.033turn);
+      background-color: #553311;
+      background-image: radial-gradient(#664422, rgba(0, 0, 0,.2) 2px, transparent 115px), radial-gradient(#654321, rgba(0, 0, 0,.15) 1px, transparent 90px), radial-gradient(#664422, rgba(67, 67, 54,.1) 2px, transparent 135px), radial-gradient(rgba(85, 85, 72,.4), rgba(85, 85, 72,.1) 2px, transparent 80px);
       background-size: 80px 72px, 50px 40px, 85px 35px, 90px 50px;
       background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-      width: 2px;
-      height: 11px;
-      top: 212px;
+      width: 56px;
+      height: 105px;
+      top: 259px;
       border: 1px solid;
         border-image-slice: 100%;
         border-image-source: none;
+      border-image-slice: 100%;
+      border-image-source: none;
       border-image-slice: 100%;
       border-image-source: none;
       border-image-source: linear-gradient(0deg, #221100, #443322);
@@ -677,7 +838,7 @@ ab8967 -> 896745
     .sidewalk-left {
       right: 178px;
       transform: perspective(0px) rotateX(2deg)skew(-0.2099turn, 0deg);
-      background-color: #694B2B;
+      background-color: #553311;
       width: 14px;
       height: 3.34em;
       top: 209px;
@@ -959,7 +1120,7 @@ ab8967 -> 896745
       background: radial-gradient(#ffe, #ff08);
       border-radius: 50%;
       top: 28px;
-      box-shadow: 0px 0px 100px 22px #ff0, 0px 0px 300px 27px #ff0, 0px 600px 800px 27px #ff0, 0px 300px 600px 27px #ff0;
+      box-shadow: 0px 0px 100px 32px #ff0, 0px 0px 400px 47px #ff0, 0px 600px 800px 87px #ff08, 0px 300px 600px 67px #ff05;
       filter: brightness(1.2);
     }
 
@@ -992,7 +1153,7 @@ ab8967 -> 896745
         border-radius: 50%;
         top: -57px;
         left: 40px;
-        background: radial-gradient(#111, #554433);
+        background: radial-gradient(#111, #332200);
     }
 
     .cap-ring {
@@ -1001,7 +1162,7 @@ ab8967 -> 896745
         transform: perspective(.3em) rotateX(55deg);
         top: -56px;
         left: 38px;
-        background: linear-gradient(to left, #aa9988 0%, #554433 49%, #998877 100%);
+        background: linear-gradient(to left, #886633 0%, #332200 49%, #776633 100%);
     }
 
     .top-ring {
@@ -1010,7 +1171,7 @@ ab8967 -> 896745
         transform: perspective(1em) rotateX(44deg);
         top: -48px;
         left: 25px;
-        background: linear-gradient(to left, #aa9988 0%, #554433 49%, #998877 100%);
+        background: linear-gradient(to left, #886633 0%, #332200 49%, #776633 100%);
         box-shadow: 0px -4px 5px -3px #080410;
     }
 
@@ -1080,7 +1241,7 @@ ab8967 -> 896745
     .panel-5 {
         width: 2.1em;
         height: 2.9em;
-        background: radial-gradient(#998877, #776655);
+        background: radial-gradient(#874, #652);
         transform: perspective(2em) rotateX(17deg) rotateY(0deg) skew(0.06turn, 4deg);
         top: -26px;
         left: 60px;
@@ -1091,8 +1252,8 @@ ab8967 -> 896745
 
     .curly-s::before {
         content: 'S';
-        color: #222;
-        top: 129px;
+        color: #210;
+        top: 133px;
         left: 49px;
         font-size: 3em;
         transform: perspective(1em) rotateX(-40deg) skew(-0.08turn, 0deg);
@@ -1101,11 +1262,11 @@ ab8967 -> 896745
     .curly-s.flip {
         transform: scaleX(-1);
         left: 92px;
-        text-shadow: 1px -1px 2px #bbaa99;
+        text-shadow: 1px -1px 5px #fe65;
     }
 
     .curly-s.right {
-        text-shadow: -2px 1px 2px #aa9988;
+        text-shadow: -2px 1px 5px #fe65;
     }
 
     .post {
@@ -1125,6 +1286,90 @@ ab8967 -> 896745
         left: 34px;
         top: 524px;
         border-radius: 5px;
+    }
+
+    .headlight-1 {
+      width: 139px;
+      height: 13px;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,200,0) -1%, rgba(255, 255, 245,.9) 50%);
+      box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
+      top: 270px;
+      left: 1072px;
+      transform: perspective(1px) rotateY(0.7deg) rotateX(.4deg) skew(0.1turn, -11deg);
+      border-radius: 4px;
+      border: 1px solid #ffd2;
+      box-sizing: content-box;
+      border-left: 0px solid #ffd3;
+    }
+
+    .headlight-2 {
+      width: 129px;
+      height: 13px;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,200,0) -1%, rgba(255, 255, 245,.9) 50%);
+      box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
+      top: 274px;
+      left: 1117px;
+      transform: perspective(1px) rotateY(.7deg) rotateX(.4deg) skew(0.1turn, -19deg);
+      border-radius: 4px;
+      border: 1px solid #ffd2;
+      box-sizing: content-box;
+      border-left: 0px solid #ffd3;
+    }
+
+    .car {
+      top: 262px;
+      right: 333px;
+    }
+
+    .car__grill {
+      width: 56px;
+      background: #000;
+      height: 20px;
+      border-radius: 0 0 10px 10px;
+      top: 2px;
+    }
+
+    .car__hood {
+      width: 56px;
+      background: #000;
+      height: 12px;
+      top: -9px;
+      transform: skew(-0.18turn,0deg);
+      left: 12px;
+    }
+
+    .car__side{
+      width: 52px;
+      background: rgb(34,17,0);
+      background: radial-gradient(circle, rgba(34,17,0,1) 0%, rgba(0,0,0,1) 90%);
+      height: 20px;
+      top: -11px;
+      transform: skew(-0.0turn,-31deg) rotateY(0deg);
+      left: 49px;
+      border-radius: 0 60% 20% 0;
+    }
+
+    .car__rear {
+      width: 66px;
+      background: #000;
+      height: 20px;
+      border-radius: 15px 15px 0 0;
+      top: -23px;
+      transform: skew(-0.55turn, 2deg);
+      left: 26px;
+    }
+
+    .car__windshield {
+      width: 50px;
+      border: 2px solid #000;
+      background: #fe83;
+      height: 15px;
+      border-radius: 10px 10px 0 0;
+      top: -22px;
+      transform: skew(-0.05turn, 0deg);
+      left: 26px;
     }
 </style>
 
@@ -1158,7 +1403,7 @@ ab8967 -> 896745
           <div></div><div></div><div></div><div></div><div></div>
         </div>
         <div class="window-row short">
-          <div></div><div></div><div></div><div></div><div></div>
+          <div class="semi-lit-window-2"></div><div class="half-lit-window-2"></div><div class="lit-window-2"></div><div class="half-lit-window-2"></div><div class="semi-lit-window-2"></div>
         </div>
         <div class="concrete-row short">
           <div></div><div></div><div></div><div></div><div></div>
@@ -1199,7 +1444,7 @@ ab8967 -> 896745
         <div></div><div></div><div></div><div></div><div></div></div>
         <div class="window-row">
           <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div class="semi-lit-window-2"></div><div class="half-lit-window-2"></div><div class="lit-window-2"></div><div class="half-lit-window-2"></div><div class="semi-lit-window-2"></div><div></div><div></div><div></div>
           <div></div><div></div><div></div><div></div><div></div>
         </div>
         <div class="concrete-row"><div></div><div></div><div></div><div></div><div></div>
@@ -1230,7 +1475,13 @@ ab8967 -> 896745
         <div></div><div></div><div></div><div></div><div></div></div>
       </div>
 
-      <div class="building-panel-10"></div>
+      <div class="building-panel-10">
+        <div class="ad-1">
+          PARK HOTEL
+        </div>
+        <div class="ad-2">&#9756;</div>
+        <div class="ad-3"></div>
+      </div>
       <div class="building-panel-11"></div>
       <div class="building-panel-12">
         <div class="dark-window-row">
@@ -1302,32 +1553,41 @@ ab8967 -> 896745
         <div class="facade-2">
           <div class="window-side-1">
             <div class="solid-fullpane-1"></div>
-            <div class="clear-halfpane-short-1"></div>
-            <div class="clear-halfpane-short-2"></div>
-            <div class="clear-halfpane-tall-1"></div>
-            <div class="clear-halfpane-tall-2"></div>
+            <div class="clear-halfpane-short-1 half-lit-window-1"></div>
+            <div class="clear-halfpane-short-2 semi-lit-window-1"></div>
+            <div class="clear-halfpane-tall-1 semi-lit-window-1"></div>
+            <div class="clear-halfpane-tall-2 half-lit-window-1"></div>
             <div class="solid-fullpane-2"></div>
           </div>
           <div class="door">
             <div class="solid-fullpane-1"></div>
             <div class="door-recess">
               <div class="door-frame-2">
-                <div class="door-window-2"></div>
+                <div class="door-window lit-window-1"></div>
                 </div>
             </div>
           </div>
             <div class="window-side-2">
-              <div class="solid-fullpane-1"></div>
-            <div class="clear-halfpane-short-1"></div>
-            <div class="clear-halfpane-short-2"></div>
-            <div class="clear-halfpane-tall-1"></div>
-            <div class="clear-halfpane-tall-2"></div>
+              <div class="solid-fullpane-1 "></div>
+            <div class="clear-halfpane-short-1 lit-window-1"></div>
+            <div class="clear-halfpane-short-2 lit-window-1"></div>
+            <div class="clear-halfpane-tall-1 lit-window-1"></div>
+            <div class="clear-halfpane-tall-2 lit-window-1"></div>
             <div class="solid-fullpane-2"></div>
             </div>
 
        
           
         </div>
+      </div>
+      <div class="picnic-2">
+        <div class="bench-1-legs"></div>
+        <div class="table-legs"></div>
+        <div class="bench-2-legs"></div>
+        <div class="bench-1"></div>
+        
+        <div class="bench-2"></div>
+        <div class="table"></div>
       </div>
       <div class="building-panel-6">
         <div class="recess">
@@ -1383,26 +1643,26 @@ ab8967 -> 896745
           <div class="facade">
             <div class="window-side-1">
               <div class="solid-fullpane-1"></div>
-              <div class="clear-halfpane-short-1"></div>
-              <div class="clear-halfpane-short-2"></div>
-              <div class="clear-halfpane-tall-1"></div>
-              <div class="clear-halfpane-tall-2"></div>
+              <div class="clear-halfpane-short-1 semi-lit-window-1"></div>
+              <div class="clear-halfpane-short-2 unlit-window-1"></div>
+              <div class="clear-halfpane-tall-1 unlit-window-1"></div>
+              <div class="clear-halfpane-tall-2 semi-lit-window-1"></div>
               <div class="solid-fullpane-2"></div>
             </div>
             <div class="door">
               <div class="solid-fullpane-1"></div>
               <div class="door-recess">
                 <div class="door-frame">
-                  <div class="door-window"></div>
+                  <div class="door-window half-lit-window-1"></div>
                   </div>
               </div>
             </div>
               <div class="window-side-2">
                 <div class="solid-fullpane-1"></div>
-              <div class="clear-halfpane-short-1"></div>
-              <div class="clear-halfpane-short-2"></div>
-              <div class="clear-halfpane-tall-1"></div>
-              <div class="clear-halfpane-tall-2"></div>
+              <div class="clear-halfpane-short-1 unlit-window-1"></div>
+              <div class="clear-halfpane-short-2 semi-lit-window-1"></div>
+              <div class="clear-halfpane-tall-1 semi-lit-window-1"></div>
+              <div class="clear-halfpane-tall-2 unlit-window-1"></div>
               <div class="solid-fullpane-2"></div>
               </div>
 
@@ -1605,6 +1865,7 @@ ab8967 -> 896745
         </div>
         <div class="sun-lighting-overlay"></div>
 
+        
 
         <div class="brick-pattern-01"></div>
         <div class="brick-pattern-02"></div>
@@ -1620,6 +1881,15 @@ ab8967 -> 896745
         <div class="parking-space-1"></div>
 
         <div class="crosswalk"></div>
+        <div class="car">
+          <div class="car__rear"></div>
+          <div class="car__windshield"></div>
+          <div class="car__hood"></div>
+          <div class="car__grill"></div>
+          <div class="car__side"></div>
+        </div>
+        <div class="headlight-1"></div>
+        <div class="headlight-2"></div>
         <div class="sidewalk-mid"></div>
    
         <div class="sidewalk-low"></div>
@@ -1713,22 +1983,6 @@ ab8967 -> 896745
         </div>
         
         <div class="building-panel-right-9"></div>
-        <div class="building-panel-right-1">
-          <div class="recess">
-            <div class="green-window-container green-window-1">
-              <div class="narrow-window">
-                <div class="narrow-window-top narrow-window-pane"></div>
-                <div class="narrow-window-btm narrow-window-pane"></div>
-              </div>
-            </div>
-            <div class="green-window-container green-window-2">
-              <div class="narrow-window">
-                <div class="narrow-window-top narrow-window-pane"></div>
-                <div class="narrow-window-btm narrow-window-pane"></div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="lamp-3">
           <div class="top-ball"></div>
           <div class="cap-ring"></div>
@@ -1756,7 +2010,42 @@ ab8967 -> 896745
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
-      </div>
+        </div>
+        <div class="bunting-rear"></div>
+        <div class="awning__post-1 post"></div>
+        <div class="picnic">
+          <div class="bench-1-legs"></div>
+          <div class="table-legs"></div>
+          <div class="bench-2-legs"></div>
+          <div class="bench-1"></div>
+          
+          <div class="bench-2"></div>
+          <div class="table"></div>
+        </div>
+        
+        <div class="picnic-light"></div>
+        
+        <div class="awning">
+          
+          <div class="awning__post-2 post"></div>
+          <div class="bunting"></div>
+        </div>
+        <div class="building-panel-right-1">
+          <div class="recess">
+            <div class="green-window-container green-window-1">
+              <div class="narrow-window">
+                <div class="narrow-window-top narrow-window-pane"></div>
+                <div class="narrow-window-btm narrow-window-pane"></div>
+              </div>
+            </div>
+            <div class="green-window-container green-window-2">
+              <div class="narrow-window">
+                <div class="narrow-window-top narrow-window-pane"></div>
+                <div class="narrow-window-btm narrow-window-pane"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="lamp-4">
         <div class="top-ball"></div>
         <div class="cap-ring"></div>
@@ -1813,7 +2102,8 @@ ab8967 -> 896745
         <div class="post post-top"></div>
         <div class="post post-bottom"></div>
     </div>
-
+    <div class="flair"></div>
+    
     </div>
 </body>
 </html>

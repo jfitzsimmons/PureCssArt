@@ -321,7 +321,7 @@ top: 98px;
 width: 248px;
 height: 100px;
 border: 17px dotted #110;
-top: 11px;
+top: 9px;
     }
     .bunting-rear{
       right: -16px;
@@ -851,6 +851,18 @@ ab8967 -> 896745
       border-radius: 20% 85% 18% 75%;
     }
 
+    .side-street {
+      left: 644px;
+transform: rotateX(22deg)skew(-0.21turn, 0deg);
+background: #111113;
+background-image: radial-gradient(#181809, rgba(44, 44, 35,.2) 2px, transparent 115px), radial-gradient(#211005, rgba(32, 32, 25,.15) 1px, transparent 90px), radial-gradient(#181809, rgba(32, 32, 25,.1) 2px, transparent 135px), radial-gradient(rgba(44, 44, 35,.4), rgba(44, 44, 35,.1) 2px, transparent 80px);
+background-size: 150px 50px, 130px 150px, 100px 70px, 125px 60px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+width: 497px;
+height: 20px;
+top: 266px;
+  }
+
     .main-street-3 {
       right: 136px;
       transform: perspective(0) rotateX(12deg)skew(-0.197turn, 0deg);
@@ -888,7 +900,7 @@ ab8967 -> 896745
   }
 
   .main-street-1-right {
-    right: 301px;
+    right: 299px;
     transform: perspective(6px) rotateX(2deg) skew(-0.166turn, 0deg);
 
     background-image: radial-gradient(#181809, rgba(44, 44, 35,.2) 2px, transparent 115px), radial-gradient(#211005, rgba(32, 32, 25,.15) 1px, transparent 90px), radial-gradient(#181809, rgba(32, 32, 25,.1) 2px, transparent 135px), radial-gradient(rgba(44, 44, 35,.4), rgba(44, 44, 35,.1) 2px, transparent 80px);
@@ -898,6 +910,7 @@ ab8967 -> 896745
     height: 18em;
     top: 247px;
     border-left: 6px dashed #7f706a;
+    border-right: 1px solid #110;
   }
     
 
@@ -919,20 +932,20 @@ ab8967 -> 896745
     .crosswalk {
       width: 738px;
       height: 22px;
-      background: linear-gradient(to right, rgba(160,159,176,0) 0%, rgba(162,161,177,0) 2%, rgba(163,162,178,.8) 3%, rgba(170,169,184,.8) 11%, rgba(171,170,185,0) 12%, rgba(179,177,190,0) 20%, rgba(180,178,191,.8) 21%, rgba(187,185,197,.8) 29%, rgba(188,186,198,0) 30%, rgba(196,193,203,0) 38%, rgba(197,194,204,.8) 39%, rgba(204,201,210,.8) 47%, rgba(205,202,211,0) 48%, rgba(214,210,217,0) 57%, rgba(215,211,218,.8) 58%, rgba(222,218,224,.8) 66%, rgba(223,219,224,0) 67%, rgba(230,225,229,0) 74%, rgba(231,226,230,.8) 75%, rgba(238,233,236,.8) 83%, rgba(239,234,236,0) 84%, rgba(246,240,242,0) 91%, rgba(246,241,242,.8) 92%, rgba(254,248,248,.8) 100%);
+      background: linear-gradient(to right, rgba(160,159,176,0) 0%, rgba(162,161,177,0) 2%, rgba(163,162,178,.8) 3%, rgba(170,169,184,.8) 11%, rgba(171,170,185,0) 12%, rgba(179,177,190,0) 20%, rgba(180,178,191,.8) 21%, rgba(187,185,197,.8) 29%, rgba(188,186,198,0) 30%, rgba(196,193,203,0) 38%, rgba(197,194,204,.8) 39%, rgba(204,201,210,.8) 47%, rgba(205,202,211,0) 48%, rgba(214,210,217,0) 57%, rgba(215,211,218,.8) 58%, rgba(222,218,224,.8) 66%, rgba(223,219,224,0) 67%, rgba(230,225,229,0) 74%, rgba(231,226,230,.8) 75%, rgba(238,233,236,.8) 83%, rgba(239,234,236,0) 84%, rgba(246,240,242,0) 91%, rgba(246,241,242,.7) 92%, rgba(254,248,248,.7) 100%);
       top: 553px;
       left: 221px;
       transform: perspective(.025em) rotateX(0.2deg)skew(-0.19turn, 0deg);
     }
 
     .parking-space-1 {
-      height: 18em;
-      width: 20em;
-      top: 391px;
-      left: 727px;
-      border-top: 6px solid #7f706a;
-      border-bottom: 4px solid #7f706a;
-      transform: perspective(18px) rotateX(2.9deg) skew(-0.156turn, 0deg);
+      height: 19em;
+width: 14em;
+top: 314px;
+left: 897px;
+border-top: 5px solid #7f706a;
+border-bottom: 3px solid #7f706a;
+transform: perspective(12px) rotateX(2.7deg) skew(-0.156turn, 0deg);
     }
 
     .parking-meter-1 {
@@ -942,9 +955,9 @@ ab8967 -> 896745
     }
 
     .parking-meter-2 {
-      right: 410px;
-      top: 316px;
-      transform: scale(0.25);
+      right: 325px;
+      top: 266px;
+      transform: scale(0.2);
     }
 
     .meter-side-1 {
@@ -1035,6 +1048,14 @@ ab8967 -> 896745
       top: 168px;
       border-radius: 3px;
     }
+    .meter-base {
+      background: linear-gradient(to left, #54483b 12%, #301f08 30%, #412f29 55%, #301f18 100%);
+height: 12px;
+width: 46px;
+top: 499px;
+left: 271px;
+border-radius: 20px 20px 5px 5px;
+    }
 
     .lamp-1 {
         right: 168px;
@@ -1079,8 +1100,8 @@ ab8967 -> 896745
     }
 
     .lamp-7 {
-      left: 730px;
-      top: 224px;
+      left: 731px;
+      top: 225px;
       transform: scale(0.23);
     }
 
@@ -1102,6 +1123,18 @@ ab8967 -> 896745
       transform: scale(0.09);
     }
 
+    .lamp-12 {
+      left: 1154px;
+      top: 223px;
+      transform: scale(0.06);
+    }
+
+    .lamp-13 {
+      left: 877px;
+      top: 223px;
+      transform: scale(0.06);
+    }
+
     .bulb {
       width: .7em;
       height: .7em;
@@ -1109,7 +1142,7 @@ ab8967 -> 896745
       border-radius: 50%;
       top: 28px;
       box-shadow: 0px 0px 100px 32px #ff0, 0px 0px 400px 47px #ff0, 0px 600px 800px 87px #ff07, 0px 300px 600px 67px #ff06;
-      filter: brightness(1.2);
+      filter: brightness(1.2) opacity(0.9);
     }
 
     .bulb-main-1 {
@@ -1150,7 +1183,7 @@ ab8967 -> 896745
         transform: perspective(.3em) rotateX(55deg);
         top: -56px;
         left: 38px;
-        background: linear-gradient(to left, #886633 0%, #332200 49%, #776633 100%);
+        background: linear-gradient(to left, #531 0%, #210 49%, #763 100%);
     }
 
     .top-ring {
@@ -1159,7 +1192,7 @@ ab8967 -> 896745
         transform: perspective(1em) rotateX(44deg);
         top: -48px;
         left: 25px;
-        background: linear-gradient(to left, #886633 0%, #332200 49%, #776633 100%);
+        background: linear-gradient(to left, #531 0%, #210 49%, #763 100%);
         box-shadow: 0px -4px 5px -3px #080410;
     }
 
@@ -1218,7 +1251,7 @@ ab8967 -> 896745
     .panel-4 {
         width: 4em;
         height: 3em;
-        background: linear-gradient(to left, #222 0%, #444 100%);
+        background: linear-gradient(to left, #222 0%, #432 100%);
         transform: perspective(3em) rotateX(27deg) rotateY(0deg) skew(-0.01turn, 0deg);
         top: -28px;
         left: -3px;
@@ -1275,9 +1308,16 @@ ab8967 -> 896745
         top: 524px;
         border-radius: 5px;
     }
+    .post-base {
+      height: 20px;
+      width: 55px;
+      top: 699px;
+      left: 19px;
+      border-radius: 20px 20px 5px 5px;
+    }
 
     .headlight-1 {
-      width: 139px;
+      width: 140px;
       height: 13px;
       background: rgb(255,255,255);
       background: linear-gradient(90deg, rgba(255,255,200,0) -1%, rgba(255, 255, 245,.9) 50%);
@@ -1292,7 +1332,7 @@ ab8967 -> 896745
     }
 
     .headlight-2 {
-      width: 129px;
+      width: 131px;
       height: 13px;
       background: rgb(255,255,255);
       background: linear-gradient(90deg, rgba(255,255,200,0) -1%, rgba(255, 255, 245,.9) 50%);
@@ -1329,10 +1369,10 @@ ab8967 -> 896745
     }
 
     .car__side{
-      width: 52px;
+      width: 50px;
       background: rgb(34,17,0);
       background: radial-gradient(circle, rgba(34,17,0,1) 0%, rgba(0,0,0,1) 90%);
-      height: 20px;
+      height: 16px;
       top: -11px;
       transform: skew(-0.0turn,-31deg) rotateY(0deg);
       left: 49px;
@@ -1366,10 +1406,11 @@ ab8967 -> 896745
     .c1,.c2,.c3,.c4, .c5, .c6, .c7{
   position:absolute;
   border-radius:700px 700px 5000px 700px;
-  background:#151C26;
+  background: rgb(21,28,38);
+background: linear-gradient(-50deg, rgba(21,28,38,1) 40%, rgba(51,51,34,1) 110%); 
   transform:rotate(45deg);
   overflow:hidden;
-  box-shadow: 0px 45px 40px 0px #110, 1px 1px 2px 0px #210;
+  box-shadow: 0px 45px 40px 0px #b93b, 1px 1px 2px 0px #ca4,inset 0 0 44px 5px #110,inset -80px -80px 28px 68px #000c;
   }
 .c1{
   width:132px;
@@ -1394,8 +1435,8 @@ left: 149px;
 .c5{
   width: 231px;
 height: 231px;
-left: 412px;
-top: 111px;
+left: 197px;
+top: 196px;
   }
 .c6{
   width:192px;
@@ -1410,7 +1451,8 @@ top: 111px;
 .circ1,.circ2,.circ3{
   position:absolute;
   border-radius:100%;
-  background:#555A6E;
+  background: rgb(85,90,110);
+background: linear-gradient(260deg, rgba(85,90,110,.1) 0%, rgba(119,119,85,.5) 90%); 
   }
 .circ1{
    width:70px;
@@ -1430,7 +1472,8 @@ top: 111px;
 .circ4,.circ5, .circ6, .circ7{
   position:absolute;
   border-radius:100%;
-  background:#555A6E;
+  background: rgb(85,90,110);
+background: linear-gradient(260deg, rgba(85,90,110,.1) 0%, rgba(119,119,85,.5) 90%);
   transform:rotate(90deg);
   }
 .circ4{
@@ -1561,7 +1604,66 @@ top: 111px;
         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
         <div></div><div></div><div></div><div></div><div></div></div>
       </div>
-
+      <div class="sidewalk-left"></div>
+      <div class="lamp-12">
+        <div class="top-ball"></div>
+          <div class="cap-ring"></div>
+          <div class="top-ring"></div>
+          <div class="bulbs-reflection-1">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="panel-3"></div>
+          <div class="bulbs-main">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="bulbs-reflection-2">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="curly-s right"></div>
+          <div class="curly-s flip"></div>
+          <div class="panel-1 glass"></div>
+          <div class="panel-2 glass"></div>
+          <div class="panel-4"></div>
+          <div class="low-ring"></div>
+          <div class="mid-ring"></div>
+          <div class="panel-5"></div>
+          <div class="post post-top"></div>
+          <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
+      </div>
+      <div class="lamp-13">
+        <div class="top-ball"></div>
+          <div class="cap-ring"></div>
+          <div class="top-ring"></div>
+          <div class="bulbs-reflection-1">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="panel-3"></div>
+          <div class="bulbs-main">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="bulbs-reflection-2">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="curly-s right"></div>
+          <div class="curly-s flip"></div>
+          <div class="panel-1 glass"></div>
+          <div class="panel-2 glass"></div>
+          <div class="panel-4"></div>
+          <div class="low-ring"></div>
+          <div class="mid-ring"></div>
+          <div class="panel-5"></div>
+          <div class="post post-top"></div>
+          <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
+      </div>
+<div class="side-street"></div>
       <div class="building-panel-10">
         <div class="ad-1">
           PARK HOTEL
@@ -1778,7 +1880,7 @@ top: 111px;
             </div>
           </div>
         </div>
-        <div class="sidewalk-left"></div>
+        
 
         <div class="lamp-6">
           <div class="top-ball"></div>
@@ -1807,6 +1909,7 @@ top: 111px;
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
         </div>
         <div class="lamp-9">
           <div class="top-ball"></div>
@@ -1835,6 +1938,7 @@ top: 111px;
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
         </div>
         <div class="lamp-10">
           <div class="top-ball"></div>
@@ -1863,6 +1967,7 @@ top: 111px;
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
         </div>
         <div class="lamp-11">
           <div class="top-ball"></div>
@@ -1891,6 +1996,7 @@ top: 111px;
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
         </div>
           <div class="no-parking-curb"></div>
 
@@ -1921,6 +2027,7 @@ top: 111px;
             <div class="panel-5"></div>
             <div class="post post-top"></div>
             <div class="post post-bottom"></div>
+            <div class="post post-base"></div>
         </div>
         <div class="lamp-8">
             <div class="top-ball"></div>
@@ -1949,6 +2056,7 @@ top: 111px;
             <div class="panel-5"></div>
             <div class="post post-top"></div>
             <div class="post post-bottom"></div>
+            <div class="post post-base"></div>
         </div>
         <div class="sidewalk-brick"></div>
         <div class="brick-pattern-01"></div>
@@ -1990,6 +2098,7 @@ top: 111px;
           <div class="meter-side-2">
             <div class="coin-bevel"></div>
           </div>
+          <div class="meter-base"></div>
         </div>
 
         <div class="parking-meter-2">
@@ -2005,6 +2114,7 @@ top: 111px;
           <div class="meter-side-2">
             <div class="coin-bevel"></div>
           </div>
+          <div class="meter-base"></div>
         </div>
         <div class="lamp-1">
           <div class="top-ball"></div>
@@ -2033,6 +2143,7 @@ top: 111px;
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
       </div>
   
         <div class="lamp-2">
@@ -2062,6 +2173,7 @@ top: 111px;
             <div class="panel-5"></div>
             <div class="post post-top"></div>
             <div class="post post-bottom"></div>
+            <div class="post post-base"></div>
         </div>
         
         <div class="building-panel-right-9"></div>
@@ -2092,6 +2204,7 @@ top: 111px;
           <div class="panel-5"></div>
           <div class="post post-top"></div>
           <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
         </div>
         <div class="bunting-rear"></div>
         <div class="awning__post-1 post"></div>
@@ -2156,6 +2269,7 @@ top: 111px;
         <div class="panel-5"></div>
         <div class="post post-top"></div>
         <div class="post post-bottom"></div>
+        <div class="post post-base"></div>
     </div>
       <div class="lamp-5">
         <div class="top-ball"></div>
@@ -2184,6 +2298,7 @@ top: 111px;
         <div class="panel-5"></div>
         <div class="post post-top"></div>
         <div class="post post-bottom"></div>
+        <div class="post post-base"></div>
     </div>
 
     

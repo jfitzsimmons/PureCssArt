@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+narrow-window-pane<!DOCTYPE html>
 <!--  
 TESTJPF
   single point is 
@@ -50,6 +50,7 @@ TESTJPF
       width: 1100px;
       height: 1100px;
       top: -190px;
+      filter: saturate(2);
     }
     .sun-lighting-overlay {
       background-image: radial-gradient(circle at 90%, #bbb022 0%, #bb9092 25%, #001942 100%);
@@ -85,22 +86,22 @@ box-shadow: -3px -35px 86px -10px #080410;
       top: 126px;
       box-shadow: 32px -10px 40px 0px #080410;
     }
+
     .building-panel-3 {
-      left: 355px;
-      transform: perspective(45px) rotateX(0deg) rotateY(2.6deg) skew(1turn, -3deg);
-      background-image: linear-gradient(117deg, #9686a6, #a09090);
-      width: 6.5em;
-      height: 20.5em;
-      top: 114px;
-      box-shadow: inset -42px -10px 42px 0px #08041044;
+      left: 328px;
+transform: perspective(45px) rotateX(0deg) rotateY(2.6deg) skew(1turn, -3deg);
+background-image: linear-gradient(117deg, #9686a6, #a09090);
+width: 8.5em;
+height: 20.6em;
+top: 116px;
+box-shadow: inset -42px -10px 42px 0px #08041044;
     }
 
     .building-panel-4 {
-      left: -3px;
       background-color: #604050;
-      width: 22.2em;
-      height: 21.6em;
-      top: 108px;
+width: 20.2em;
+height: 21.6em;
+top: 108px;
     }
     .building-panel-5 {
       left: 496px;
@@ -144,11 +145,11 @@ box-shadow: -3px -35px 86px -10px #080410;
 
     .building-panel-7 {
       left: 726px;
-      transform: perspective(11px) rotateX(0deg) rotateY(1.1deg) skew(0turn, 0deg);
-      background: linear-gradient(150deg, #775777, #efaf9f);
-      width: 8em;
-      height: 10.8em;
-      top: 130px;
+transform: perspective(11px) rotateX(0deg) rotateY(1.1deg) skew(0turn, 0deg);
+background: linear-gradient(150deg, #775777, #efaf9f);
+width: 8em;
+height: 11.8em;
+top: 113px;
     }
 
     .building-panel-10 {
@@ -218,6 +219,40 @@ height: 37px;
 top: 14px;
 transform: perspective(0.1em) rotateX(0deg) rotateY(.05deg) skew(-0.004turn, 24.5deg);
     }
+    .bracket {
+  top: -78px;
+  left: -37px;
+  width: 100px;
+  height: 100px;
+}
+    .bracket::before {
+  content: '\22BF';
+  font-size: 206px;
+  font-weight: 100;
+  color: #080400
+ 
+    }
+    .tarp {
+      width: 150px;
+  height: 157px;
+  background: #040200;
+  transform: skew(-0.125turn,0deg);
+  right: 73px;
+}
+
+.picnic-light-2{
+  width: 15px;
+height: 54px;
+background: rgb(255,255,255);
+background: linear-gradient(rgba(255,255,200,.9) -1%,rgba(255,255,155,.8) 79%, rgba(255, 255, 105,0)100%);
+box-shadow: 0px -9px 5px 5px #ffd9,inset 0px 20px 4px 0px #ffd1;
+top: 18px;
+right: 109px;
+transform: perspective(1px) rotateX(2deg) skew(0.0turn, 0deg);
+box-sizing: content-box;
+border-left: 0px solid #ffd3;
+    }
+    
     .picnic-light{
       width: 10px;
       height: 52px;
@@ -304,6 +339,25 @@ linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, 
 background-size: 16px 48px;
 
 }
+.flower-bed {
+  left: 871px;
+top: 299px;
+width: 14px;
+height: 17px;
+background-color: #331100;
+background: linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
+}
+
+.flower-bed-side {
+  left: 886px;
+top: 298px;
+width: 28px;
+height: 15px;
+background-color: #331100;
+background: linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
+transform: perspective(1px) rotateX(0deg) rotateY(.5deg) skew(0.0turn, -8deg);
+}
+
 .flowers{
   left: 698px;
 top: 280px;
@@ -311,9 +365,14 @@ transform: rotateY(55deg) scale(0.8) skew(0.03turn,1deg);
 }
 
 .flowers-2{
-  left: 899px;
-top: 275px;
-transform: rotateY(145deg) scale(0.5) skew(0.03turn,-19deg);
+  left: 905px;
+  top: 253px;
+  transform: rotateY(145deg) scale(0.5) skew(0.03turn,-19deg) rotateX(165deg);
+}
+.flowers-3{
+  left: 850px;
+top: 271px;
+transform: rotateY(55deg) scale(0.6) skew(0.03turn,-19deg);
 }
 .a-flower-1 {
   width: 10px;
@@ -324,7 +383,7 @@ left: 78px;
 top: 22px;
 transform: rotate(19deg);
 box-shadow: -1px 0 10px 0px #1106;
-background: rgba(132,137,55,.6);
+background: rgba(132,137,55,.9);
 }
 .a-flower-1:before {
 top: -12px;
@@ -351,7 +410,7 @@ box-shadow: -1px 0 10px 0px #1106;
   transform: rotate(30deg);
   top: 5px;
 box-shadow: -1px 0 10px 0px #1106;
-background: rgba(132,137,55,.6);
+background: rgba(132,137,55,.9);
 }
 .a-flower-3 {
   width: 8px;
@@ -362,7 +421,7 @@ left: 112px;
 top: 22px;
 transform: rotate(30deg);
 box-shadow: -1px 0 10px 0px #1106;
-background: rgba(132,137,55,.6);
+background: rgba(132,137,55,.9);
 }
 .a-flower-3:before {
   content: "";
@@ -404,7 +463,7 @@ box-shadow: -1px 0 10px 0px #1106;
   position: relative;
   left: 80px;
 box-shadow: -1px 0 10px 0px #1106;
-background: rgba(132,137,55,.6);
+background: rgba(132,137,55,.9);
 }
 .b-flower-2::after {
   border: dotted 6px #E41618;
@@ -436,7 +495,7 @@ left: 100px;
 transform: rotate(27deg);
 bottom: 3px;
 box-shadow: -1px 0 10px 0px #1106;
-background: rgba(132,137,55,.6);
+background: rgba(132,137,55,.9);
 }
 .b-flower-3::after {
   border: dotted 6px #5349C3;
@@ -468,7 +527,7 @@ box-shadow: -1px 0 10px 0px #1106;
   top: -41px;
   transform: rotate(33deg);
 box-shadow: -1px 0 10px 0px #1106;
-background: rgba(132,137,55,.6);
+background: rgba(132,137,55,.9);
 }
     .awning {
       background-color: #110;
@@ -544,30 +603,66 @@ top: 9px;
       text-align: center;
       filter: blur(0.04em);
     }
+    .molding-left {
+      width: 100%;
+height: 50px;
+    }
+    .molding-front {
+      width: 100%;
+      height: 50px;
+}
+     .tile {
+      width:15px;
+      height:15px;
+      background: #DEE4DAdd;
+      border: 2px solid #84acb4cc;
+    }
+    .tile-b {
+      width: 17px;
+height: 17px;
+background: #dee4dabb;
+border: 3px solid #84acb499;
+    }
+    .molding-left .tile-2 {
+      left: 15px
+    }
+    .molding-left .tile-3 {
+      top: 15px
+    }
+    .molding-left .tile-4, .tile-9, .tile-12 {
+      right: 15px
+    }
+    .molding-left .tile-5, .tile-8, .tile-11  {
+      top: 15px;
+      right: 0;
+    }
+    .molding-left .tile-6, .tile-7, .tile-10 {
+      right: 0;
+    }
     .facade {
       width: 100%;
       height: 85%;
       bottom: 0;
-      border-top: 5px solid #84acb4;
+      border-top: 5px solid #84acb4cc;
     }
     .facade-2 {
       width: 100%;
-      height: 85%;
+      height: 80%;
       bottom: 0
     }
     .window-side-1 {
       width: 33%;
       height: 100%;
-      border-left: 5px solid #84acb4;
-      border-right: 5px solid #84acb4;
+      border-left: 5px solid #84acb4cc;
+      border-right: 5px solid #84acb4cc;
       right: 0;
       bottom: 0;
     }
     .window-side-2 {
       width: 33%;
       height: 100%;
-      border-left: 5px solid #84acb4;
-      border-right: 5px solid #84acb4;
+      border-left: 5px solid #84acb4cc;
+      border-right: 5px solid #84acb4cc;
       left: 0;
       bottom: 0;
     }
@@ -577,8 +672,8 @@ top: 9px;
       right: 33%;
     }
     .solid-fullpane-1 {
-      background-color: #DEE4DA;
-      border: 3px solid #DEE4DA;
+      background-color: #DEE4DAdd;
+      border: 3px solid #DEE4DAcc;
       box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
       width: 100%;
       height: 20%;
@@ -612,35 +707,35 @@ box-shadow: inset -4px 2px 7px 0px rgba(10, 5, 10, .1), 0px 4px 9px 0px #f3e3736
 
     }
     .clear-halfpane-short-1{
-      border: 3px solid #DEE4DA;
+      border: 3px solid #DEE4DAcc;
       width: 52%;
       height: 20%;
       top: 19%;
     }
     .clear-halfpane-short-2{
-      border: 3px solid #DEE4DA;
+      border: 3px solid #DEE4DAcc;
       width: 52%;
       height: 20%;
       top: 19%;
       right: 0;
     }
     .clear-halfpane-tall-1{
-      border: 3px solid #DEE4DA;
+      border: 3px solid #DEE4DAcc;
       width: 52%;
       height: 53%;
       top: 38%;
       right: 0;
     }
     .clear-halfpane-tall-2{
-      border: 3px solid #DEE4DA;
+      border: 3px solid #DEE4DAcc;
       width: 52%;
       height: 53%;
       top: 38%;
 
     }
     .solid-fullpane-2{
-      background-color: #DEE4DA;
-      border: 3px solid #DEE4DA;
+      background-color: #DEE4DAdd;
+      border: 3px solid #DEE4DAcc;
       box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
       width: 100%;
       height: 10%;
@@ -896,8 +991,6 @@ top: 5px;
     }
     .narrow-window-top::before {
       border-radius: 16% 13% 0px 0px;
-      box-shadow: inset -2px 8px 22px 6px rgba(20, 10, 20, .5);
-      background: #938393;
       width: 100%;
       height: 100%;
     }
@@ -910,8 +1003,6 @@ top: 5px;
       border-color: inherit;
     }
   .narrow-window-btm::before {
-    box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
-    background: #736373;
     width: 100%;
     height: 100%;
   }
@@ -1031,12 +1122,12 @@ top: 234px;
     }
 
     .no-parking-curb {
-      left: 352px;
+      left: 530px;
       transform: perspective(1em) rotateX(6deg)skew(-0.2088turn, 0deg);
       background: linear-gradient(to left, #440800, #aa4433);
-      width: 2.5em;
-      height: 3.5em;
-      top: 465px;
+      width: 3em;
+      height: 8.5em;
+      top: 379px;
       border-radius: 20% 85% 18% 75%;
     }
 
@@ -1131,10 +1222,10 @@ top: 266px;
       height: 19em;
 width: 14em;
 top: 314px;
-left: 897px;
+left: 891px;
 border-top: 5px solid #7f706a;
 border-bottom: 3px solid #7f706a;
-transform: perspective(12px) rotateX(2.7deg) skew(-0.156turn, 0deg);
+transform: perspective(12px) rotateX(2.7deg) skew(-0.156turn, 1deg);
     }
 
     .parking-meter-1 {
@@ -1652,7 +1743,7 @@ background: linear-gradient(260deg, rgba(85,90,110,.1) 0%, rgba(119,119,85,.5) 9
 width: 130px;
 bottom: 277px;
 right: 183px;
-filter: brightness(.8);
+filter: brightness(.9);
 transform: rotateY(41deg) scale(1.3);
 }
 
@@ -1734,21 +1825,21 @@ filter: blur(1px);
 }
 .brim {
   height: 52px;
-  width: 253px;
-  top: 81px;
-  right: 46px;
-  background: #849C8F;
-  background: radial-gradient(ellipse at 35% -30%, #849C8F 0%, rgb(39, 49, 51) 50%);
-  border-radius: 50%;
-  transform: rotate(-11deg) rotateX(50deg);
-  border-top: 1px solid rgb(39, 49, 51);
-  box-shadow: inset -20px -10px 20px 1px #050300, 0px 20px 30px 0px #05030088;
+width: 253px;
+top: 74px;
+right: 38px;
+background: #849C8F;
+background: radial-gradient(ellipse at 35% -30%, #849C8F 0%, rgb(39, 49, 51) 50%);
+border-radius: 50%;
+transform: rotate(-11deg) rotateX(50deg);
+border-top: 1px solid rgb(39, 49, 51);
+box-shadow: inset -20px -10px 20px 1px #050300, 0px 20px 30px 0px #05030088;
 }
 
 .hat-back{
-  height: 69px;
+  height: 60px;
 width: 54px;
-top: 34px;
+top: 43px;
 right: 101px;
 background: #283336;
 background: radial-gradient(ellipse at 50% 20%, rgb(39, 49, 51) -100%, #283336 40%, rgb(39, 49, 51) 150%);
@@ -1758,26 +1849,25 @@ border: 1px solid rgb(39, 49, 51);
 }
 
 .hat-top{
-  height: 24px;
-  width: 86px;
-  top: 28px;
-  right: 114px;
-  background: #57695A;
-  background: radial-gradient(ellipse at 50% 20%, rgb(39, 49, 51) -100%, #57695A 40%, rgb(39, 49, 51) 150%);
-  border-radius: 200px 150px 70px 0px;
-  transform: rotate(-6deg);
+  height: 21px;
+width: 86px;
+top: 29px;
+right: 119px;
+background: #506050;
+background: radial-gradient(ellipse at 50% 20%, rgb(39, 49, 51) -100%, #506050 40%, rgb(39, 49, 51) 150%);
+border-radius: 200px 100px 50px 0px;
+transform: rotate(4deg);
 }
 
 .hat-side{
   height: 60px;
-  width: 121px;
-  top: 34px;
-  right: 121px;
-  background: #57695A;
-  background: radial-gradient(ellipse at 50% 20%, rgb(29, 39, 41) -100%, #47594A 40%, rgb(29, 39, 41) 150%);
-  border-radius: 500px 300px 200px 5px;
-  transform: rotate(-11deg);
-
+width: 114px;
+top: 31px;
+right: 130px;
+background: #57695A;
+background: radial-gradient(ellipse at 50% 20%, rgb(29, 39, 41) -100%, #47594A 40%, rgb(29, 39, 41) 150%);
+border-radius: 125px 150px 50px 5px;
+transform: rotate(-11deg);
 }
 </style>
 
@@ -1966,6 +2056,9 @@ border: 1px solid rgb(39, 49, 51);
         </div>
       </div>
       <div class="building-panel-7">
+        <div class="tile-10 tile"></div>
+        <div class="tile-11 tile"></div>
+        <div class="tile-12 tile"></div>
         <div class="facade-2">
           <div class="window-side-1">
             <div class="solid-fullpane-1"></div>
@@ -2015,7 +2108,16 @@ border: 1px solid rgb(39, 49, 51);
         <div class="b-flower-3"></div>
         <div class="a-flower-3"></div>
       </div>
-
+      <div class="flower-bed-side"></div>
+      <div class="flowers-3">
+        <div class="b-flower-1"></div>
+        <div class="a-flower-1"></div>
+        <div class="b-flower-2"></div>
+        <div class="a-flower-2"></div>
+        <div class="b-flower-3"></div>
+        <div class="a-flower-3"></div>
+      </div>
+      <div class="flower-bed"></div>
       <div class="flowers-2">
         <div class="b-flower-1"></div>
         <div class="a-flower-1"></div>
@@ -2032,20 +2134,20 @@ border: 1px solid rgb(39, 49, 51);
 
           <div class="red-window-container red-window-1">
             <div class="narrow-window">
-              <div class="narrow-window-top narrow-window-pane"></div>
-              <div class="narrow-window-btm narrow-window-pane"></div>
+              <div class="narrow-window-top narrow-window-pane half-lit-window-1"></div>
+              <div class="narrow-window-btm narrow-window-pane half-lit-window-1"></div>
             </div>
           </div>
           <div class="red-window-container red-window-2">
             <div class="narrow-window">
-              <div class="narrow-window-top narrow-window-pane"></div>
-              <div class="narrow-window-btm narrow-window-pane"></div>
+              <div class="narrow-window-top narrow-window-pane lit-window-1"></div>
+              <div class="narrow-window-btm narrow-window-pane lit-window-1"></div>
             </div>
           </div>
           <div class="red-window-container red-window-3">
             <div class="narrow-window">
-              <div class="narrow-window-top narrow-window-pane"></div>
-              <div class="narrow-window-btm narrow-window-pane"></div>
+              <div class="narrow-window-top narrow-window-pane half-lit-window-1"></div>
+              <div class="narrow-window-btm narrow-window-pane half-lit-window-1"></div>
             </div>
           </div>
           </div>
@@ -2054,20 +2156,20 @@ border: 1px solid rgb(39, 49, 51);
 
           <div class="red-window-container red-window-1">
             <div class="narrow-window">
-              <div class="narrow-window-top narrow-window-pane"></div>
-              <div class="narrow-window-btm narrow-window-pane"></div>
+              <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+              <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
             </div>
           </div>
           <div class="red-window-container red-window-2">
             <div class="narrow-window">
-              <div class="narrow-window-top narrow-window-pane"></div>
-              <div class="narrow-window-btm narrow-window-pane"></div>
+              <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+              <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
             </div>
           </div>
           <div class="red-window-container red-window-3">
             <div class="narrow-window">
-              <div class="narrow-window-top narrow-window-pane"></div>
-              <div class="narrow-window-btm narrow-window-pane"></div>
+              <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+              <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
             </div>
           </div>
           </div>
@@ -2076,6 +2178,7 @@ border: 1px solid rgb(39, 49, 51);
       <div class="building-panel-8"></div>
       
         <div class="building-panel-5">
+          <div class="molding-left"><div class="tile"></div><div class="tile tile-2"></div><div  class="tile tile-3"></div><div  class="tile tile-4"></div><div  class="tile tile-5"></div><div  class="tile tile-6"></div></div>
           <div class="facade">
             <div class="window-side-1">
               <div class="solid-fullpane-1"></div>
@@ -2106,23 +2209,29 @@ border: 1px solid rgb(39, 49, 51);
             
           </div>
         </div>
-        <div class="building-panel-9"></div>
+        <div class="building-panel-9">
+          <div class="molding-front">
+          <div  class="tile-b tile-7"></div><div  class="tile-b tile-8"></div><div  class="tile-b tile-9"></div>
+        </div>
+        </div>
         <div class="building-panel-4"></div>
 
         <div class="building-panel-3"></div>
-        <div class="building-panel-2"></div>
+        <div class="building-panel-2">
+          <div class="picnic-light-2"></div>
+          <div class="tarp"></div><div class="bracket"></div></div>
         <div class="building-panel-1">
           <div class="recess">
             <div class="green-window-container green-window-1">
               <div class="narrow-window">
-                <div class="narrow-window-top narrow-window-pane"></div>
-                <div class="narrow-window-btm narrow-window-pane"></div>
+                <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+                <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
               </div>
             </div>
             <div class="green-window-container green-window-2">
               <div class="narrow-window">
-                <div class="narrow-window-top narrow-window-pane"></div>
-                <div class="narrow-window-btm narrow-window-pane"></div>
+                <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+                <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
               </div>
             </div>
           </div>
@@ -2476,59 +2585,60 @@ border: 1px solid rgb(39, 49, 51);
           <div class="recess">
             <div class="green-window-container green-window-1">
               <div class="narrow-window">
-                <div class="narrow-window-top narrow-window-pane"></div>
-                <div class="narrow-window-btm narrow-window-pane"></div>
+                <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+                <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
               </div>
             </div>
             <div class="green-window-container green-window-2">
               <div class="narrow-window">
-                <div class="narrow-window-top narrow-window-pane"></div>
-                <div class="narrow-window-btm narrow-window-pane"></div>
+                <div class="narrow-window-top narrow-window-pane unlit-window-1"></div>
+                <div class="narrow-window-btm narrow-window-pane unlit-window-1"></div>
               </div>
             </div>
           </div>
         </div>
+        <div class="lamp-4">
+          <div class="top-ball"></div>
+          <div class="cap-ring"></div>
+          <div class="top-ring"></div>
+          <div class="bulbs-reflection-1">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="panel-3"></div>
+          <div class="bulbs-main">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="bulbs-reflection-2">
+              <div class="bulb bulb-main-1"></div>
+              <div class="bulb bulb-main-2"></div>
+          </div>
+          <div class="curly-s right"></div>
+          <div class="curly-s flip"></div>
+          <div class="panel-1 glass"></div>
+          <div class="panel-2 glass"></div>
+          <div class="panel-4"></div>
+          <div class="low-ring"></div>
+          <div class="mid-ring"></div>
+          <div class="panel-5"></div>
+          <div class="post post-top"></div>
+          <div class="post post-bottom"></div>
+          <div class="post post-base"></div>
+      </div>
+        <div class="person">
+          <div class="body"></div>
+          <div class="arm"></div>
+          <div class="arm-2"></div>
+          <div class="head"></div>
+          <div class="hair"></div>
+          <div class="hat-back"></div>
+          <div class="hat-top"></div>
+          <div class="hat-side"></div>
+          <div class="brim"></div>
+        </div>
         <div class="flair"></div>
-      <div class="lamp-4">
-        <div class="top-ball"></div>
-        <div class="cap-ring"></div>
-        <div class="top-ring"></div>
-        <div class="bulbs-reflection-1">
-            <div class="bulb bulb-main-1"></div>
-            <div class="bulb bulb-main-2"></div>
-        </div>
-        <div class="panel-3"></div>
-        <div class="bulbs-main">
-            <div class="bulb bulb-main-1"></div>
-            <div class="bulb bulb-main-2"></div>
-        </div>
-        <div class="bulbs-reflection-2">
-            <div class="bulb bulb-main-1"></div>
-            <div class="bulb bulb-main-2"></div>
-        </div>
-        <div class="curly-s right"></div>
-        <div class="curly-s flip"></div>
-        <div class="panel-1 glass"></div>
-        <div class="panel-2 glass"></div>
-        <div class="panel-4"></div>
-        <div class="low-ring"></div>
-        <div class="mid-ring"></div>
-        <div class="panel-5"></div>
-        <div class="post post-top"></div>
-        <div class="post post-bottom"></div>
-        <div class="post post-base"></div>
-    </div>
-    <div class="person">
-      <div class="body"></div>
-      <div class="arm"></div>
-      <div class="arm-2"></div>
-      <div class="head"></div>
-      <div class="hair"></div>
-      <div class="hat-back"></div>
-      <div class="hat-top"></div>
-      <div class="hat-side"></div>
-      <div class="brim"></div>
-    </div>
+
       <div class="lamp-5">
         <div class="top-ball"></div>
         <div class="cap-ring"></div>

@@ -2072,7 +2072,7 @@ body {
     height: 11px;
     background: linear-gradient(90deg, rgba(255, 255, 200, 0) -1%, rgba(255, 255, 245, .9) 50%);
     top: 281px;
-    left: 1062px;
+    left: 1056px;
     transform: perspective(1px) rotateY(0.7deg) rotateX(.4deg) skew(0.1turn, -11deg);
   }
 
@@ -2081,7 +2081,7 @@ body {
     height: 11px;
     background: linear-gradient(90deg, rgba(255, 255, 200, 0) -1%, rgba(255, 255, 245, .9) 50%);
     top: 287px;
-    left: 1100px;
+    left: 1091px;
     transform: perspective(1px) rotateY(.7deg) rotateX(.4deg) skew(0.1turn, -19deg);
   }
 

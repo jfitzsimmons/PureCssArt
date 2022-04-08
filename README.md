@@ -17,3 +17,4 @@ Because of the artistic nature of this project I have not concerned myself with 
 * Hills stolen from Judith Neuman's Cerros [CSS Mountains](https://codepen.io/judag/full/aVapRv/)
 * [CSS3 Patterns Gallery](https://projects.verou.me/css3patterns/)
 * Gradients made easier by [cssgradient.io](https://cssgradient.io/)
+* Frame stolen from [Tudor Sfătosu](https://codepen.io/chris_tudor/pen/OJPeQgb)

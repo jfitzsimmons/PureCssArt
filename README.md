@@ -11,4 +11,4 @@ Rules I have for myself:
 
 Because of the artistic nature of this project I have not concerned myself with cross-browser-compatibility, so the live preview will look laughable in anything other than MOZILLA FIREFOX :-)
 
-![alt text](https://raw.githubusercontent.com/jfitzsimmons/PureCss/master/preview.png)
+![alt text](https://github.com/jfitzsimmons/PureCssArt/blob/master/preview.png)

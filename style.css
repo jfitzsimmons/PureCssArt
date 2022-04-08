@@ -44,50 +44,38 @@ body {
     height: 941px;
   }
 
-  .frame-l {
-    left: -364px;
+  .frame-pattern {
     font-size: 78px;
     color: #DE9B7288;
     letter-spacing: -31px;
-    width: 958px;
     text-align: center;
     text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
-    transform: rotate(90deg);
+  }
+
+  .frame-l {
+    left: -364px;
     top: 374px;
+    width: 958px;
+    transform: rotate(90deg);
   }
 
   .frame-r {
     left: 905px;
-    font-size: 78px;
-    color: #DE9B7288;
-    letter-spacing: -31px;
-    width: 958px;
-    text-align: center;
-    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
-    transform: rotate(-90deg);
     top: 405px;
+    width: 958px;
+    transform: rotate(-90deg);
   }
 
   .frame-btm {
     left: 106px;
     bottom: 36px;
-    font-size: 78px;
-    color: #DE9B7288;
-    letter-spacing: -31px;
     width: 1257px;
-    text-align: center;
-    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
   }
 
   .frame-top {
     left: 106px;
-    font-size: 78px;
-    color: #DE9B7288;
-    letter-spacing: -31px;
-    width: 1257px;
-    text-align: center;
-    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
     top: -12px;
+    width: 1257px;
   }
 
   .painting-title {
@@ -364,20 +352,20 @@ body {
     left: 2px;
   }
 
-  .roll-1 {
-    background: rgba(230, 239, 246, .5);
-    background: linear-gradient(180deg, rgba(230, 239, 246, .5) 0%, rgba(73, 78, 98, .5) 100%);
+  .roll {
     position: relative;
     height: 4%;
     width: 100%
   }
 
+  .roll-1 {
+    background: rgba(230, 239, 246, .5);
+    background: linear-gradient(180deg, rgba(230, 239, 246, .5) 0%, rgba(73, 78, 98, .5) 100%);
+  }
+
   .roll-2 {
     background: rgba(57, 56, 70, .5);
     background: linear-gradient(180deg, rgba(57, 56, 70, .5) 0%, rgba(40, 39, 46, .5) 100%);
-    position: relative;
-    height: 4%;
-    width: 100%
   }
 
   .tall-windows {
@@ -486,30 +474,25 @@ body {
     right: 73px;
   }
 
-  .picnic-light-2 {
-    width: 15px;
-    height: 54px;
+  .porch-light {
     background: rgb(255, 255, 255);
     background: linear-gradient(rgba(255, 255, 200, .9) -1%, rgba(255, 255, 155, .8) 79%, rgba(255, 255, 105, 0)100%);
     box-shadow: 0px -9px 5px 5px #ffd9, inset 0px 20px 4px 0px #ffd1;
-    top: 18px;
-    right: 109px;
     transform: perspective(1px) rotateX(2deg) skew(0.0turn, 0deg);
-    box-sizing: content-box;
-    border-left: 0px solid #ffd3;
   }
 
-  .picnic-light {
+  .porch-light-2 {
+    width: 15px;
+    height: 54px;
+    top: 18px;
+    right: 109px;
+  }
+
+  .porch-light-1 {
     width: 10px;
     height: 52px;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(rgba(255, 255, 200, .9) -1%, rgba(255, 255, 155, .8) 79%, rgba(255, 255, 105, 0)100%);
-    box-shadow: 0px -9px 5px 5px #ffd9, inset 0px 20px 4px 0px #ffd1;
     top: 102px;
     right: 129px;
-    transform: perspective(1px) rotateX(2deg) skew(0.0turn, 0deg);
-    box-sizing: content-box;
-    border-left: 0px solid #ffd3;
   }
 
   .picnic {
@@ -518,55 +501,51 @@ body {
     transform: perspective(170px) rotateX(44deg) skew(-0.05turn, 0deg);
   }
 
-  .bench-1-legs::before {
-    content: '^';
-    font-size: 63px;
-    top: 78px;
-    color: #210;
-    left: 107px;
-    font-weight: bold;
-
-  }
-
   .picnic-2 {
     left: 714px;
     top: 309px;
     transform: perspective(170px) rotateX(58deg) skew(-0.05turn, 0deg) scale(.6);
   }
 
-  .bench-1 {
-    width: 30px;
-    height: 72px;
+  .bench {
     background:
-      linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
-    right: -27px;
-    top: 24px;
+     linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
     box-shadow: 5px 5px 10px 0px #210, 2px 0px 3px 0px #210;
     border-radius: 5px;
     border: 1px solid #320;
   }
 
+  .bench-legs {
+    font-size: 63px;
+    color: #210;
+    font-weight: bold;
+  }
+
+  .bench-1-legs::before {
+    content: '^';
+    top: 78px;
+    left: 107px;
+  }
+
+  .bench-1 {
+    width: 30px;
+    height: 72px;
+    right: -27px;
+    top: 24px;
+  }
+
   .bench-2-legs::before {
     content: '^';
-    font-size: 63px;
     top: 79px;
-    color: #210;
     left: 3px;
     transform: skew(.07turn, 0deg);
-    font-weight: bold;
-
   }
 
   .bench-2 {
     width: 30px;
     height: 72px;
-    background:
-      linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
     left: 108px;
     top: 23px;
-    box-shadow: 5px 5px 10px 0px #210, 2px 0px 3px 0px #210;
-    border-radius: 5px;
-    border: 1px solid #320;
   }
 
   .table-legs::before {
@@ -594,13 +573,16 @@ body {
 
   }
 
+  .bed {
+    background-color: #331100;
+    background: linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
+  }
+
   .flower-bed {
     left: 871px;
     top: 299px;
     width: 14px;
     height: 17px;
-    background-color: #331100;
-    background: linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
   }
 
   .flower-bed-side {
@@ -608,9 +590,6 @@ body {
     top: 298px;
     width: 28px;
     height: 15px;
-    background-color: #331100;
-    background: linear-gradient(63deg, #310 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #310 78%), linear-gradient(63deg, transparent 34%, #310 38%, #310 58%, transparent 62%), #301000;
-    transform: perspective(1px) rotateX(0deg) rotateY(.5deg) skew(0.0turn, -8deg);
   }
 
   .flowers {
@@ -824,42 +803,43 @@ body {
   }
 
   .bunting {
-    right: 0;
     width: 248px;
     height: 100px;
     border: 17px dotted #110;
+  }
+
+  .bunting-front {
+    right: 0;
     top: 9px;
   }
 
   .bunting-rear {
     right: -16px;
-    width: 248px;
-    height: 100px;
-    border: 17px dotted #110;
     top: 111px;
   }
 
-  .ad-1 {
+  .ad {
     background: #442A1C88;
     color: #CAAD9188;
+    filter: blur(0.04em);
+  }
+
+  .ad-1 {
     width: 100px;
     height: 23px;
     border: 2px solid #CAAD9144;
     font-size: 13px;
-    padding: 3px 6px;
+    padding: 1px 12px 6px;
     left: 5px;
     top: 5px;
-    filter: blur(0.04em);
   }
 
   .ad-2 {
-    background: #442A1C88;
-    color: #CAAD9188;
     width: 38px;
     height: 29px;
     border: 2px solid #CAAD9144;
-    font-size: 22px;
-    padding: 0px 6px;
+    font-size: 24px;
+    padding: 0px 6px 32px;
     left: 5px;
     top: 26px;
   }
@@ -869,8 +849,6 @@ body {
   }
 
   .ad-3 {
-    background: #442A1C88;
-    color: #CDB26C66;
     width: 100px;
     height: 54px;
     border: 6px solid #CAAD9144;
@@ -879,15 +857,9 @@ body {
     left: 5px;
     top: 84px;
     text-align: center;
-    filter: blur(0.04em);
   }
 
-  .molding-left {
-    width: 100%;
-    height: 50px;
-  }
-
-  .molding-front {
+  .moulding {
     width: 100%;
     height: 50px;
   }
@@ -906,28 +878,28 @@ body {
     border: 3px solid #84acb499;
   }
 
-  .molding-left .tile-2 {
+  .moulding .tile-2 {
     left: 15px
   }
 
-  .molding-left .tile-3 {
+  .moulding .tile-3 {
     top: 15px
   }
 
-  .molding-left .tile-4,
+  .moulding .tile-4,
   .tile-9,
   .tile-12 {
     right: 15px
   }
 
-  .molding-left .tile-5,
+  .moulding .tile-5,
   .tile-8,
   .tile-11 {
     top: 15px;
     right: 0;
   }
 
-  .molding-left .tile-6,
+  .moulding .tile-6,
   .tile-7,
   .tile-10 {
     right: 0;
@@ -946,22 +918,19 @@ body {
     bottom: 0
   }
 
-  .window-side-1 {
+  .window-side {
     width: 33%;
     height: 100%;
     border-left: 5px solid #84acb4cc;
     border-right: 5px solid #84acb4cc;
-    right: 0;
     bottom: 0;
+  }
+  .window-side-1 {
+    right: 0;
   }
 
   .window-side-2 {
-    width: 33%;
-    height: 100%;
-    border-left: 5px solid #84acb4cc;
-    border-right: 5px solid #84acb4cc;
     left: 0;
-    bottom: 0;
   }
 
   .door {
@@ -970,12 +939,21 @@ body {
     right: 33%;
   }
 
-  .solid-fullpane-1 {
+  .solid-fullpane {
     background-color: #DEE4DAdd;
     border: 3px solid #DEE4DAcc;
     box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
     width: 100%;
+  }
+
+
+  .solid-fullpane-1 {
     height: 20%;
+  }
+
+  .solid-fullpane-2 {
+    height: 10%;
+    bottom: 0;
   }
 
   .lit-window-2 {
@@ -1008,7 +986,6 @@ body {
   .unlit-window-1 {
     background: #736373;
     box-shadow: inset -4px 6px 14px 6px rgba(10, 5, 10, .4);
-
   }
 
   .lobby-door-window {
@@ -1039,68 +1016,57 @@ body {
     box-shadow: 0px 5px 8px 0px #2108;
   }
 
-  .solid-tinypane-tall-1 {
+  .tinypane {
     border: 1px solid #F6CF8C88;
     width: 29%;
     height: 53%;
     top: 43%;
+  }
+
+  .solid-tinypane-tall-1 {
     right: 2%;
   }
 
   .solid-tinypane-tall-2 {
-    border: 1px solid #F6CF8C88;
-    width: 29%;
-    height: 53%;
-    top: 43%;
     left: 2%
   }
 
   .solid-tinypane-tall-3 {
-    border: 1px solid #F6CF8C88;
     width: 30%;
     left: 35%;
-    height: 53%;
-    top: 43%;
   }
 
-  .clear-halfpane-short-1 {
+  .halfpane-short {
     border: 3px solid #DEE4DAcc;
     width: 52%;
     height: 20%;
+  }
+
+  .clear-halfpane-short-1 {
     top: 19%;
   }
 
   .clear-halfpane-short-2 {
-    border: 3px solid #DEE4DAcc;
-    width: 52%;
-    height: 20%;
     top: 19%;
     right: 0;
   }
 
-  .clear-halfpane-tall-1 {
+  .halfpane-tall {
     border: 3px solid #DEE4DAcc;
     width: 52%;
     height: 53%;
+  }
+
+  .clear-halfpane-tall-1 {
     top: 38%;
     right: 0;
   }
 
   .clear-halfpane-tall-2 {
-    border: 3px solid #DEE4DAcc;
-    width: 52%;
-    height: 53%;
     top: 38%;
   }
 
-  .solid-fullpane-2 {
-    background-color: #DEE4DAdd;
-    border: 3px solid #DEE4DAcc;
-    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .2);
-    width: 100%;
-    height: 10%;
-    bottom: 0;
-  }
+
 
   .concrete-row {
     height: 7%;
@@ -1449,26 +1415,6 @@ body {
     top: 104px;
   }
 
-  .white-window-container {
-    height: 100%;
-    width: 14%;
-    border-color: rgba(255, 255, 205, 0.3);
-    border-bottom: 3px solid #9a6a6a;
-    box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, .3);
-  }
-
-  .white-window-row-1 {
-    height: 22%;
-    width: 100%;
-    top: 20px;
-  }
-
-  .white-window-row-2 {
-    height: 22%;
-    width: 100%;
-    top: 88px;
-  }
-
   .narrow-window {
     height: 100%;
     width: 90%;
@@ -1524,13 +1470,8 @@ body {
     height: 15em;
     top: 643px;
     border: 3px solid #2108;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-source: linear-gradient(0deg, #0008, #2108);
-    border-image-slice: 1;
   }
 
-  /* 553311  */
   .sidewalk-mid {
     right: 91px;
     transform: perspective(0) rotateX(1deg)skew(0.033turn);
@@ -1542,14 +1483,6 @@ body {
     height: 105px;
     top: 259px;
     border: 1px solid;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-source: linear-gradient(0deg, #221100, #443322);
-    border-image-slice: 1;
   }
 
   .sidewalk-brick {
@@ -1717,7 +1650,7 @@ body {
     height: 19em;
     width: 14em;
     top: 314px;
-    left: 891px;
+    left: 883px;
     border-top: 5px solid #7f706a;
     border-bottom: 3px solid #7f706a;
     transform: perspective(12px) rotateX(2.7deg) skew(-0.156turn, 1deg);
@@ -2095,112 +2028,80 @@ body {
     border-radius: 20px 20px 5px 5px;
   }
 
-  .taillight-1 {
+  .taillight {
     width: 15px;
     height: 10px;
     background: radial-gradient(circle, rgba(255, 42, 45, .9) 0%, rgba(205, 42, 45, 0) 150%);
     box-shadow: 0px 0px 123px 40px rgb(255, 42, 45), 0px 0px 22px 8px rgb(255, 42, 45), inset 0px 0px 7px 2px rgb(255, 42, 45);
-    top: 334px;
-    left: 1120px;
     border-radius: 40%;
     filter: blur(.01em);
+  }
+
+  .taillight-1 {
+    top: 334px;
+    left: 1120px;
   }
 
   .taillight-2 {
-    width: 15px;
-    height: 10px;
-    background: radial-gradient(circle, rgba(255, 42, 45, .9) 0%, rgba(205, 42, 45, 0) 150%);
-    box-shadow: 0px 0px 123px 40px rgb(255, 42, 45), 0px 0px 22px 8px rgb(255, 42, 45), inset 0px 0px 7px 2px rgb(255, 42, 45);
     top: 334px;
     left: 1169px;
-    border-radius: 40%;
-    filter: blur(.01em);
   }
 
   .taillight-3 {
-    width: 6px;
-    height: 4px;
-    background: radial-gradient(circle, rgba(255, 42, 45, .9) 0%, rgba(205, 42, 45, 0) 150%);
-    box-shadow: 0px 0px 123px 40px rgb(255, 42, 45), 0px 0px 22px 8px rgb(255, 42, 45), inset 0px 0px 7px 2px rgb(255, 42, 45);
     top: 260px;
     left: 1208px;
-    border-radius: 40%;
-    filter: blur(.01em);
   }
 
   .taillight-4 {
-    width: 6px;
-    height: 4px;
-    background: radial-gradient(circle, rgba(255, 42, 45, .9) 0%, rgba(205, 42, 45, 0) 150%);
-    box-shadow: 0px 0px 123px 40px rgb(255, 42, 45), 0px 0px 22px 8px rgb(255, 42, 45), inset 0px 0px 7px 2px rgb(255, 42, 45);
     top: 260px;
     left: 1224px;
-    border-radius: 40%;
+  }
+
+  .headlight {
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
+    border-radius: 4px;
+    border: 1px solid #ffd2;
+    box-sizing: content-box;
+    border-left: 0px solid #ffd3;
     filter: blur(.01em);
   }
 
   .headlight-1 {
     width: 140px;
     height: 11px;
-    background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 200, 0) -1%, rgba(255, 255, 245, .9) 50%);
-    box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
     top: 281px;
     left: 1062px;
     transform: perspective(1px) rotateY(0.7deg) rotateX(.4deg) skew(0.1turn, -11deg);
-    border-radius: 4px;
-    border: 1px solid #ffd2;
-    box-sizing: content-box;
-    border-left: 0px solid #ffd3;
-    filter: blur(.01em);
   }
 
   .headlight-2 {
     width: 131px;
     height: 11px;
-    background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 200, 0) -1%, rgba(255, 255, 245, .9) 50%);
-    box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
     top: 287px;
     left: 1100px;
     transform: perspective(1px) rotateY(.7deg) rotateX(.4deg) skew(0.1turn, -19deg);
-    border-radius: 4px;
-    border: 1px solid #ffd2;
-    box-sizing: content-box;
-    border-left: 0px solid #ffd3;
-    filter: blur(.01em);
   }
 
   .headlight-3 {
     width: 80px;
     height: 10px;
-    background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 245, .9) 30%, rgba(255, 255, 200, 0) 110%);
-    box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
     top: 276px;
     left: 1189px;
     transform: perspective(1px) rotateY(-.7deg) rotateX(-.4deg) skew(0.1turn, -35deg);
-    border-radius: 4px;
-    border: 1px solid #ffd2;
-    box-sizing: content-box;
-    border-left: 0px solid #ffd3;
-    filter: blur(.01em);
   }
 
   .headlight-4 {
     width: 84px;
     height: 12px;
-    background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 245, .9) -20%, rgba(255, 255, 200, 0) 110%);
-    box-shadow: 4px 4px 11px 4px #ffd7, inset 0px 0px 7px 2px #ffd3;
     top: 276px;
     left: 1234px;
     transform: perspective(1px) rotateY(-.7deg) rotateX(-.4deg) skew(0.1turn, -35deg);
-    border-radius: 4px;
-    border: 1px solid #ffd2;
-    box-sizing: content-box;
-    border-left: 0px solid #ffd3;
-    filter: blur(.01em) opacity(.8);
+    opacity: .8
   }
 
   .car {
@@ -2366,7 +2267,6 @@ body {
     transform: rotateY(41deg) scale(1.3);
   }
 
-
   .hair {
     height: 108px;
     width: 103px;
@@ -2382,23 +2282,21 @@ body {
     width: 40px;
     top: 260px;
     right: 5px;
-    background: rgb(28, 30, 21);
-    background: linear-gradient(90deg, rgba(08, 20, 01, 0) 0%, rgba(18, 20, 11, .9) 48%, rgba(20, 20, 18, 0) 100%);
-    border-radius: 45% 45% 0 0;
-    transform: rotateY(-11deg) skew(0.03turn, -9deg) rotateX(40deg);
   }
 
-  .arm {
+  .arm-1 {
     height: 113px;
     width: 67px;
     top: 294px;
     right: 159px;
+  }
+
+  .arm {
     background: rgb(28, 30, 21);
     background: linear-gradient(90deg, rgba(48, 30, 21, 0) 0%, rgba(28, 30, 21, .7) 48%, rgba(40, 40, 38, 0) 100%);
     border-radius: 45% 45% 0 0;
     transform: rotateY(-11deg) skew(0.03turn, -9deg) rotateX(40deg);
   }
-
 
   .body {
     height: 200px;

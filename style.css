@@ -2049,12 +2049,12 @@ body {
 
   .taillight-3 {
     top: 260px;
-    left: 1208px;
+    left: 1202px;
   }
 
   .taillight-4 {
     top: 260px;
-    left: 1224px;
+    left: 1215px;
   }
 
   .headlight {
@@ -2099,7 +2099,7 @@ body {
     height: 12px;
     background: linear-gradient(90deg, rgba(255, 255, 245, .9) -20%, rgba(255, 255, 200, 0) 110%);
     top: 276px;
-    left: 1234px;
+    left: 1229px;
     transform: perspective(1px) rotateY(-.7deg) rotateX(-.4deg) skew(0.1turn, -35deg);
     opacity: .8
   }

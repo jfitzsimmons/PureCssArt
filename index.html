@@ -27,9 +27,6 @@
   .container {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: rgb(95, 85, 75);
     background: radial-gradient(circle at top, #5f554b 0%, #1c1c1c 100%);
   }
@@ -44,79 +41,77 @@
     margin: 0;
     padding: 0;
     transform: scale(.8);
-    display: flex;
     box-shadow: 0 0 0 3px #DE9B72, 0 0 0 10px #3A3D3E, 0 0 0 20px #DE9B72, 0 0 0 27px #3A3D3E, 0 0 0 30px #DE9B72;
     border: 4px solid #3A3D3E;
   }
 
   .frame {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    width: 1500px;
+    height: 941px;
   }
 
   .frame-l {
-    font-size: 78px;
-    color: #DE9B7288;
-    letter-spacing: -50px;
-    text-align: left;
-    left: 50%;
-    margin-left: -678px;
-    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
-    writing-mode: vertical-lr;
-    margin-top: -95px;
-  }
-
-  .frame-r {
-    font-size: 78px;
-    color: #DE9B7288;
-    letter-spacing: -50px;
-    text-align: left;
-    left: 50%;
-    margin-left: 593px;
-    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
-    writing-mode: vertical-lr;
-    margin-top: -95px;
-  }
-
-  .frame-btm {
-    top: 336px;
+    left: -364px;
     font-size: 78px;
     color: #DE9B7288;
     letter-spacing: -31px;
-    width: 90%;
+    width: 958px;
     text-align: center;
-    margin-left: -30px;
+    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
+    transform: rotate(90deg);
+    top: 374px;
+  }
+
+  .frame-r {
+    left: 905px;
+    font-size: 78px;
+    color: #DE9B7288;
+    letter-spacing: -31px;
+    width: 958px;
+    text-align: center;
+    text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
+    transform: rotate(-90deg);
+    top: 405px;
+  }
+
+  .frame-btm {
+    left: 106px;
+    bottom: 36px;
+    font-size: 78px;
+    color: #DE9B7288;
+    letter-spacing: -31px;
+    width: 1257px;
+    text-align: center;
     text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
   }
 
   .frame-top {
-    bottom: 344px;
+    left: 106px;
     font-size: 78px;
     color: #DE9B7288;
     letter-spacing: -31px;
-    width: 90%;
+    width: 1257px;
     text-align: center;
-    margin-left: -30px;
     text-shadow: 0px -1px 5px #1A1D1E, 0 1px 80px #fecbb2;
+    top: -12px;
   }
 
-  .frame-top::before {
-    content: 'Main Street at Dusk';
-    font-size: 78px;
+  .painting-title {
+    font-size: 20px;
     color: #fecd;
-    width: 100%;
     letter-spacing: 2px;
     text-shadow: 0px -1px 8px #1A1D1E, 0 1px 44px #fecbb2, 0px -1px 2px #000;
     opacity: .8;
+    bottom: 25px;
+    right: 70px;
   }
 
   .fleurs {
     width: 1250px;
     height: 770px;
     z-index: 1;
+    top: 67px;
+    left: 126px;
   }
 
   .fleur::before {
@@ -137,9 +132,9 @@
   }
 
   .fleur-2 {
-    right: -60px;
+    right: -58px;
     transform: rotate(45deg);
-    top: -70px;
+    top: -72px;
   }
 
   .fleur-3 {
@@ -150,7 +145,7 @@
 
   .fleur-4 {
     right: -70px;
-    bottom: -60px;
+    bottom: -56px;
     transform: rotate(135deg);
   }
 
@@ -2116,7 +2111,7 @@
     background: radial-gradient(circle, rgba(255, 42, 45, .9) 0%, rgba(205, 42, 45, 0) 150%);
     box-shadow: 0px 0px 123px 40px rgb(255, 42, 45), 0px 0px 22px 8px rgb(255, 42, 45), inset 0px 0px 7px 2px rgb(255, 42, 45);
     top: 334px;
-    left: 1124px;
+    left: 1120px;
     border-radius: 40%;
     filter: blur(.01em);
   }
@@ -2149,7 +2144,7 @@
     background: radial-gradient(circle, rgba(255, 42, 45, .9) 0%, rgba(205, 42, 45, 0) 150%);
     box-shadow: 0px 0px 123px 40px rgb(255, 42, 45), 0px 0px 22px 8px rgb(255, 42, 45), inset 0px 0px 7px 2px rgb(255, 42, 45);
     top: 260px;
-    left: 1232px;
+    left: 1224px;
     border-radius: 40%;
     filter: blur(.01em);
   }
@@ -2215,7 +2210,7 @@
     border: 1px solid #ffd2;
     box-sizing: content-box;
     border-left: 0px solid #ffd3;
-    filter: blur(.01em);
+    filter: blur(.01em) opacity(.8);
   }
 
   .car {
@@ -2518,11 +2513,12 @@
         &#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;
       </div>
       <div class="frame-l">
-        &#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;
+        &#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;
       </div>
       <div class="frame-r">
-        &#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;
+        &#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;&#9826;
       </div>
+      <div class="painting-title">Main Street at Dusk</div>
       <div class="fleurs">
         <div class="fleur fleur-1"></div>
         <div class="fleur fleur-2"></div>

@@ -1249,3 +1249,12 @@
 </body>
 
 </html>
+
+<script>
+  window.onload=function(){
+    if (navigator.userAgent.includes("Chrome")) {
+      const elements = document.querySelectorAll(".frame-pattern");
+     elements.forEach(e => e.remove());  
+    }
+  }
+</script>
